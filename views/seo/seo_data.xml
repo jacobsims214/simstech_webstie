@@ -1,0 +1,390 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <!-- =======================================================================
+         Simstech Advanced SEO Data
+         Structured data, meta tags, and SEO optimizations
+    ======================================================================== -->
+
+    <!-- Enhanced SEO Meta Tags for all pages -->
+    <template id="simstech_seo_meta" inherit_id="website.layout" name="Simstech SEO Meta">
+        <xpath expr="//head" position="inside">
+            <!-- Core SEO Meta -->
+            <meta name="author" content="Jacob Sims"/>
+            <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1"/>
+            
+            <!-- Geographic Targeting - Coastal SC/NC -->
+            <meta name="geo.region" content="US-SC"/>
+            <meta name="geo.placename" content="Myrtle Beach"/>
+            <meta name="geo.position" content="33.6891;-78.8867"/>
+            <meta name="ICBM" content="33.6891, -78.8867"/>
+            
+            <!-- Additional Location Signals -->
+            <meta name="DC.title" content="Jacob Sims - Engineering &amp; Technology Consulting"/>
+            <meta name="DC.creator" content="Jacob Sims"/>
+            <meta name="DC.subject" content="Technology Consulting, Cloud Architecture, Observability, Reliability Engineering"/>
+            <meta name="DC.coverage" content="Myrtle Beach, Charleston, Wilmington, South Carolina, North Carolina"/>
+            
+            <!-- Open Graph Enhanced -->
+            <meta property="og:type" content="website"/>
+            <meta property="og:site_name" content="Jacob Sims - Engineering &amp; Technology Consulting"/>
+            <meta property="og:locale" content="en_US"/>
+            <meta property="og:image" content="/simstech_website/static/src/img/og-image.png"/>
+            <meta property="og:image:width" content="1200"/>
+            <meta property="og:image:height" content="630"/>
+            <meta property="og:image:alt" content="Jacob Sims - Engineering &amp; Technology Consulting in Myrtle Beach, SC"/>
+            
+            <!-- Twitter Card Enhanced -->
+            <meta name="twitter:card" content="summary_large_image"/>
+            <meta name="twitter:image" content="/simstech_website/static/src/img/og-image.png"/>
+            <meta name="twitter:image:alt" content="Jacob Sims - Engineering &amp; Technology Consulting"/>
+            
+            <!-- Business/Service Keywords Meta -->
+            <meta name="classification" content="Technology Consulting, Engineering Services"/>
+            <meta name="category" content="Professional Services"/>
+            <meta name="coverage" content="Charleston SC to Wilmington NC, Southeast United States"/>
+            
+            <!-- Mobile/PWA -->
+            <meta name="theme-color" content="#2563EB"/>
+            <meta name="mobile-web-app-capable" content="yes"/>
+            <meta name="apple-mobile-web-app-capable" content="yes"/>
+            <meta name="apple-mobile-web-app-status-bar-style" content="default"/>
+            <meta name="apple-mobile-web-app-title" content="Jacob Sims Consulting"/>
+        </xpath>
+    </template>
+
+    <!-- LocalBusiness Schema - Comprehensive for Coastal SC/NC -->
+    <template id="simstech_schema_localbusiness" name="LocalBusiness Schema">
+        <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "ProfessionalService",
+            "@id": "https://simstech.cloud/#organization",
+            "name": "Jacob Sims – Engineering &amp; Technology Consulting",
+            "alternateName": ["Simstech", "Jacob Sims Consulting", "Simstech Cloud"],
+            "description": "Engineer-first technology consulting specializing in cloud architecture, observability, reliability engineering, and practical AI integration. Serving businesses from Charleston, SC to Wilmington, NC.",
+            "url": "https://simstech.cloud",
+            "logo": "https://simstech.cloud/simstech_website/static/src/img/jacob-sims-logo.png",
+            "image": "https://simstech.cloud/simstech_website/static/src/img/og-image.png",
+            "priceRange": "$$",
+            "currenciesAccepted": "USD",
+            "paymentAccepted": "Invoice, Credit Card, Bank Transfer",
+            "address": {
+                "@type": "PostalAddress",
+                "streetAddress": "",
+                "addressLocality": "Myrtle Beach",
+                "addressRegion": "SC",
+                "postalCode": "29577",
+                "addressCountry": "US"
+            },
+            "geo": {
+                "@type": "GeoCoordinates",
+                "latitude": 33.6891,
+                "longitude": -78.8867
+            },
+            "areaServed": [
+                {
+                    "@type": "City",
+                    "name": "Myrtle Beach",
+                    "containedInPlace": {"@type": "State", "name": "South Carolina"}
+                },
+                {
+                    "@type": "City", 
+                    "name": "Charleston",
+                    "containedInPlace": {"@type": "State", "name": "South Carolina"}
+                },
+                {
+                    "@type": "City",
+                    "name": "Wilmington",
+                    "containedInPlace": {"@type": "State", "name": "North Carolina"}
+                },
+                {
+                    "@type": "City",
+                    "name": "Conway",
+                    "containedInPlace": {"@type": "State", "name": "South Carolina"}
+                },
+                {
+                    "@type": "City",
+                    "name": "Georgetown",
+                    "containedInPlace": {"@type": "State", "name": "South Carolina"}
+                },
+                {
+                    "@type": "City",
+                    "name": "Mount Pleasant",
+                    "containedInPlace": {"@type": "State", "name": "South Carolina"}
+                },
+                {
+                    "@type": "City",
+                    "name": "Florence",
+                    "containedInPlace": {"@type": "State", "name": "South Carolina"}
+                },
+                {
+                    "@type": "City",
+                    "name": "Southport",
+                    "containedInPlace": {"@type": "State", "name": "North Carolina"}
+                },
+                {
+                    "@type": "State",
+                    "name": "South Carolina"
+                },
+                {
+                    "@type": "State",
+                    "name": "North Carolina"
+                },
+                {
+                    "@type": "Country",
+                    "name": "United States"
+                }
+            ],
+            "serviceType": [
+                "Technology Consulting",
+                "Engineering Consulting", 
+                "Cloud Architecture Consulting",
+                "Cloud Migration Services",
+                "Observability Consulting",
+                "Reliability Engineering",
+                "Site Reliability Engineering (SRE)",
+                "DevOps Consulting",
+                "AI Integration Consulting",
+                "LLM Implementation",
+                "Software Architecture Review",
+                "Technical Due Diligence",
+                "SaaS Selection Consulting",
+                "Vendor Evaluation",
+                "Infrastructure Automation",
+                "Kubernetes Consulting",
+                "Network Engineering",
+                "Campus Network Design",
+                "Big Data Consulting",
+                "Analytics Consulting",
+                "Marketing Technology Consulting"
+            ],
+            "hasOfferCatalog": {
+                "@type": "OfferCatalog",
+                "name": "Technology Consulting Services",
+                "itemListElement": [
+                    {
+                        "@type": "Offer",
+                        "itemOffered": {
+                            "@type": "Service",
+                            "name": "Cloud Architecture &amp; Platform Design",
+                            "description": "Secure foundations, cost control, and systems teams can actually run. AWS, GCP, Azure expertise."
+                        }
+                    },
+                    {
+                        "@type": "Offer",
+                        "itemOffered": {
+                            "@type": "Service",
+                            "name": "Observability &amp; Reliability Engineering",
+                            "description": "Visibility into what's breaking, why, and how often. Metrics, logs, traces, SLOs, and operational practices."
+                        }
+                    },
+                    {
+                        "@type": "Offer",
+                        "itemOffered": {
+                            "@type": "Service",
+                            "name": "Integrations &amp; Automation",
+                            "description": "Reducing manual work and fragile glue code. API integrations, workflow automation, infrastructure as code."
+                        }
+                    },
+                    {
+                        "@type": "Offer",
+                        "itemOffered": {
+                            "@type": "Service",
+                            "name": "AI Enablement &amp; LLM Integration",
+                            "description": "Bringing AI into workflows with evaluation and guardrails. LLM observability and safe deployment."
+                        }
+                    }
+                ]
+            },
+            "knowsAbout": [
+                "Cloud Architecture",
+                "Amazon Web Services (AWS)",
+                "Google Cloud Platform (GCP)",
+                "Microsoft Azure",
+                "Kubernetes",
+                "Docker",
+                "Infrastructure as Code",
+                "Terraform",
+                "Observability",
+                "OpenTelemetry",
+                "Prometheus",
+                "Grafana",
+                "Datadog",
+                "Reliability Engineering",
+                "Site Reliability Engineering",
+                "DevOps",
+                "CI/CD Pipelines",
+                "Artificial Intelligence",
+                "Large Language Models",
+                "LLM Observability",
+                "Python",
+                "Software Engineering",
+                "System Design",
+                "Technical Architecture",
+                "Network Engineering",
+                "Campus Networks",
+                "Network Security",
+                "Big Data",
+                "Data Pipelines",
+                "Data Warehousing",
+                "Business Intelligence",
+                "Marketing Analytics",
+                "Hospitality Technology"
+            ],
+            "founder": {
+                "@type": "Person",
+                "@id": "https://simstech.cloud/#person",
+                "name": "Jacob Sims"
+            },
+            "sameAs": []
+        }
+        </script>
+    </template>
+
+    <!-- Person Schema - Enhanced -->
+    <template id="simstech_schema_person" name="Person Schema">
+        <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "Person",
+            "@id": "https://simstech.cloud/#person",
+            "name": "Jacob Sims",
+            "givenName": "Jacob",
+            "familyName": "Sims",
+            "jobTitle": "Engineering &amp; Technology Consultant",
+            "description": "Engineer-first technology consultant with 10+ years experience across healthcare, aviation, manufacturing, hospitality, marketing, and big data. Specializing in cloud architecture, observability, reliability engineering, network engineering, and practical AI integration.",
+            "url": "https://simstech.cloud",
+            "image": "https://simstech.cloud/simstech_website/static/src/img/jacob-sims-logo.png",
+            "address": {
+                "@type": "PostalAddress",
+                "addressLocality": "Myrtle Beach",
+                "addressRegion": "SC",
+                "addressCountry": "US"
+            },
+            "worksFor": {
+                "@id": "https://simstech.cloud/#organization"
+            },
+            "alumniOf": [],
+            "knowsAbout": [
+                "Cloud Architecture",
+                "AWS",
+                "GCP",
+                "Azure",
+                "Kubernetes",
+                "Observability",
+                "OpenTelemetry",
+                "Reliability Engineering",
+                "Site Reliability Engineering (SRE)",
+                "DevOps",
+                "Python",
+                "Software Engineering",
+                "AI Integration",
+                "Large Language Models",
+                "LLM Observability",
+                "Network Engineering",
+                "Campus Networks",
+                "Big Data",
+                "Data Analytics",
+                "Healthcare IT",
+                "Aviation Systems",
+                "Manufacturing Systems",
+                "Hospitality Technology",
+                "Marketing Technology"
+            ],
+            "hasCredential": [],
+            "sameAs": []
+        }
+        </script>
+    </template>
+
+    <!-- Service Schema - Individual Services for Rich Results -->
+    <template id="simstech_schema_services" name="Services Schema">
+        <script type="application/ld+json">
+        [
+            {
+                "@context": "https://schema.org",
+                "@type": "Service",
+                "serviceType": "Cloud Architecture Consulting",
+                "name": "Cloud &amp; Platform Architecture",
+                "description": "Design and implementation of secure, cost-effective cloud infrastructure on AWS, GCP, or Azure. Focus on systems teams can actually run and maintain.",
+                "provider": {"@id": "https://simstech.cloud/#organization"},
+                "areaServed": ["South Carolina", "North Carolina", "United States"],
+                "hasOfferCatalog": {
+                    "@type": "OfferCatalog",
+                    "name": "Cloud Services",
+                    "itemListElement": [
+                        "Cloud Migration Planning",
+                        "Multi-cloud Strategy",
+                        "Cost Optimization",
+                        "Security Architecture",
+                        "Infrastructure as Code"
+                    ]
+                }
+            },
+            {
+                "@context": "https://schema.org",
+                "@type": "Service",
+                "serviceType": "Observability Consulting",
+                "name": "Observability &amp; Reliability Engineering",
+                "description": "Implement comprehensive observability with metrics, logs, and traces. Define SLOs, build dashboards, and create operational practices that stick.",
+                "provider": {"@id": "https://simstech.cloud/#organization"},
+                "areaServed": ["South Carolina", "North Carolina", "United States"]
+            },
+            {
+                "@context": "https://schema.org",
+                "@type": "Service", 
+                "serviceType": "AI Consulting",
+                "name": "AI Enablement &amp; LLM Integration",
+                "description": "Practical AI integration with workflow focus, evaluation frameworks, and production guardrails. LLM observability and safe deployment practices.",
+                "provider": {"@id": "https://simstech.cloud/#organization"},
+                "areaServed": ["South Carolina", "North Carolina", "United States"]
+            },
+            {
+                "@context": "https://schema.org",
+                "@type": "Service",
+                "serviceType": "Integration Services",
+                "name": "Integrations &amp; Automation",
+                "description": "API integrations, workflow automation, and infrastructure as code. Reduce manual work and eliminate fragile glue code.",
+                "provider": {"@id": "https://simstech.cloud/#organization"},
+                "areaServed": ["South Carolina", "North Carolina", "United States"]
+            }
+        ]
+        </script>
+    </template>
+
+    <!-- WebSite Schema for Sitelinks Search Box -->
+    <template id="simstech_schema_website" name="WebSite Schema">
+        <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "WebSite",
+            "@id": "https://simstech.cloud/#website",
+            "url": "https://simstech.cloud",
+            "name": "Jacob Sims - Engineering &amp; Technology Consulting",
+            "description": "Engineer-first technology consulting: cloud architecture, observability, reliability engineering, and AI integration.",
+            "publisher": {"@id": "https://simstech.cloud/#organization"},
+            "inLanguage": "en-US"
+        }
+        </script>
+    </template>
+
+    <!-- BreadcrumbList Schema -->
+    <template id="simstech_schema_breadcrumb_home" name="Homepage Breadcrumb Schema">
+        <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "BreadcrumbList",
+            "itemListElement": [
+                {
+                    "@type": "ListItem",
+                    "position": 1,
+                    "name": "Home",
+                    "item": "https://simstech.cloud/"
+                }
+            ]
+        }
+        </script>
+    </template>
+
+</odoo>
+

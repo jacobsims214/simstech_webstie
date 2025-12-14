@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <!-- =======================================================================
+         Simstech Footer Snippet
+         Custom footer that can be placed directly in pages
+    ======================================================================== -->
+
+    <template id="s_simstech_footer" name="Simstech Footer">
+        <section class="s_simstech_footer simstech-section-dark">
+            <div class="simstech-container">
+                <div class="py-5">
+                    <!-- Footer Grid -->
+                    <div class="row">
+                        <!-- Brand Column -->
+                        <div class="col-lg-4 mb-4 mb-lg-0">
+                            <h5 class="text-white mb-3">Jacob Sims</h5>
+                            <p style="color: #9CA3AF !important; margin-bottom: 0.5rem;">
+                                Engineering &amp; Technology Consulting
+                            </p>
+                            <p style="color: #9CA3AF !important; font-size: 0.875rem;">
+                                Myrtle Beach, SC<br/>
+                                Serving Charleston to Wilmington
+                            </p>
+                        </div>
+                        
+                        <!-- Services Column -->
+                        <div class="col-lg-4 mb-4 mb-lg-0">
+                            <h6 class="text-white mb-3" style="font-size: 0.875rem; text-transform: uppercase; letter-spacing: 0.05em;">Services</h6>
+                            <ul class="list-unstyled" style="color: #9CA3AF; font-size: 0.875rem;">
+                                <li class="mb-2">Cloud Architecture</li>
+                                <li class="mb-2">Observability &amp; Reliability</li>
+                                <li class="mb-2">Integrations &amp; Automation</li>
+                                <li>AI Enablement</li>
+                            </ul>
+                        </div>
+                        
+                        <!-- Contact Column -->
+                        <div class="col-lg-4">
+                            <h6 class="text-white mb-3" style="font-size: 0.875rem; text-transform: uppercase; letter-spacing: 0.05em;">Get in Touch</h6>
+                            <a href="/contactus" class="btn-simstech-primary" style="font-size: 0.875rem; padding: 0.5rem 1.5rem;">
+                                Start a conversation
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <!-- Copyright -->
+                    <div class="border-top mt-4 pt-4" style="border-color: rgba(255,255,255,0.1) !important;">
+                        <p class="text-center mb-0" style="color: #6B7280; font-size: 0.75rem;">
+                            © <t t-esc="datetime.datetime.now().year"/> Jacob Sims — Engineering &amp; Technology Consulting
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </template>
+
+</odoo>
+

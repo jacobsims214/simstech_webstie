@@ -5,42 +5,28 @@
          Override default Odoo website layout for brand consistency
     ======================================================================== -->
 
-    <!-- Extend the main website layout -->
+    <!-- Extend the main website layout - Add Inter font and footer -->
     <template id="simstech_layout" inherit_id="website.layout" name="Simstech Layout">
-        <!-- Add Inter font from Google Fonts -->
         <xpath expr="//head" position="inside">
+            <!-- Inter font from Google Fonts -->
             <link rel="preconnect" href="https://fonts.googleapis.com"/>
             <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="anonymous"/>
             <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
-        </xpath>
-    </template>
-
-    <!-- SEO: Default meta tags for all pages -->
-    <template id="simstech_meta_defaults" inherit_id="website.layout" name="Simstech Meta Defaults">
-        <xpath expr="//head" position="inside">
-            <!-- Default Open Graph -->
-            <meta property="og:site_name" content="Jacob Sims - Engineering &amp; Technology Consulting"/>
-            <meta property="og:locale" content="en_US"/>
             
-            <!-- Twitter Card -->
-            <meta name="twitter:card" content="summary_large_image"/>
+            <!-- Preconnect to common CDNs for performance -->
+            <link rel="dns-prefetch" href="//www.google-analytics.com"/>
+            <link rel="dns-prefetch" href="//www.googletagmanager.com"/>
             
-            <!-- Geographic -->
-            <meta name="geo.region" content="US-SC"/>
-            <meta name="geo.placename" content="Myrtle Beach"/>
+            <!-- Hide Odoo default footer elements -->
+            <style>
+                footer#bottom { display: none !important; }
+            </style>
         </xpath>
-    </template>
-
-    <!-- Custom footer -->
-    <template id="simstech_footer" inherit_id="website.footer_default" name="Simstech Footer">
-        <xpath expr="//footer" position="replace">
-            <footer class="simstech-container">
-                <div class="py-4 text-sm text-center" style="color: #6B7280;">
-                    © <t t-esc="datetime.datetime.now().year"/> Jacob Sims — Engineering &amp; Technology Consulting · Myrtle Beach, SC
-                </div>
-            </footer>
+        
+        <!-- Add our custom footer before the Odoo footer -->
+        <xpath expr="//footer[@id='bottom']" position="before">
+            <t t-call="simstech_website.s_simstech_footer"/>
         </xpath>
     </template>
 
 </odoo>
-

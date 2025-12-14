@@ -1,53 +1,64 @@
 <?xml version="1.0" encoding="utf-8"?>
 <odoo>
     <!-- =======================================================================
-         Simstech Building Blocks - Snippet Registration
+         Simstech Building Blocks - Snippet Registration for Odoo 19
          Register all custom snippets in the website editor
     ======================================================================== -->
 
-    <!-- Create a new snippet category for Simstech -->
+    <!-- Add Simstech snippet group to the categories -->
     <template id="simstech_snippet_category" inherit_id="website.snippets" name="Simstech Snippets Category">
-        <xpath expr="//div[@id='snippet_groups']" position="inside">
-            <div class="o_panel">
-                <div class="o_panel_header">Simstech</div>
-                <div class="o_panel_body">
-                    <!-- Hero Section -->
-                    <t t-snippet="simstech_website.s_simstech_hero" 
-                       t-thumbnail="/simstech_website/static/src/img/snippets/s_hero.svg"/>
-                    
-                    <!-- Services Section -->
-                    <t t-snippet="simstech_website.s_simstech_services"
-                       t-thumbnail="/simstech_website/static/src/img/snippets/s_services.svg"/>
-                    
-                    <!-- Problems/Recognition Section -->
-                    <t t-snippet="simstech_website.s_simstech_problems"
-                       t-thumbnail="/simstech_website/static/src/img/snippets/s_problems.svg"/>
-                    
-                    <!-- Work/Experience Section -->
-                    <t t-snippet="simstech_website.s_simstech_work"
-                       t-thumbnail="/simstech_website/static/src/img/snippets/s_work.svg"/>
-                    
-                    <!-- Approach Section -->
-                    <t t-snippet="simstech_website.s_simstech_approach"
-                       t-thumbnail="/simstech_website/static/src/img/snippets/s_approach.svg"/>
-                    
-                    <!-- FAQ Section -->
-                    <t t-snippet="simstech_website.s_simstech_faq"
-                       t-thumbnail="/simstech_website/static/src/img/snippets/s_faq.svg"/>
-                    
-                    <!-- Contact Section -->
-                    <t t-snippet="simstech_website.s_simstech_contact"
-                       t-thumbnail="/simstech_website/static/src/img/snippets/s_contact.svg"/>
-                    
-                    <!-- Divider -->
-                    <t t-snippet="simstech_website.s_simstech_divider"
-                       t-thumbnail="/simstech_website/static/src/img/snippets/s_divider.svg"/>
-                </div>
-            </div>
+        <xpath expr="//snippets[@id='snippet_groups']/t[@id='installed_snippets_hook']" position="before">
+            <t snippet-group="simstech" t-snippet="website.s_snippet_group" string="Simstech"
+                t-thumbnail="/simstech_website/static/src/img/snippets_thumbs/simstech_group.svg"/>
         </xpath>
     </template>
 
-    <!-- Simple Divider Snippet -->
+    <!-- Register Simstech snippets in the snippet_structure -->
+    <template id="simstech_snippets" inherit_id="website.snippets" name="Simstech Snippets">
+        <xpath expr="//snippets[@id='snippet_structure']" position="inside">
+            <!-- Hero Section -->
+            <t t-snippet="simstech_website.s_simstech_hero" string="Simstech Hero" group="simstech">
+                <keywords>hero, intro, header, simstech, jacob, sims, consulting</keywords>
+            </t>
+            
+            <!-- Services Section -->
+            <t t-snippet="simstech_website.s_simstech_services" string="Simstech Services" group="simstech">
+                <keywords>services, features, capabilities, simstech</keywords>
+            </t>
+            
+            <!-- Problems/Recognition Section -->
+            <t t-snippet="simstech_website.s_simstech_problems" string="Simstech Problems" group="simstech">
+                <keywords>problems, challenges, recognition, simstech</keywords>
+            </t>
+            
+            <!-- Work/Experience Section -->
+            <t t-snippet="simstech_website.s_simstech_work" string="Simstech Work" group="simstech">
+                <keywords>work, experience, portfolio, simstech</keywords>
+            </t>
+            
+            <!-- Approach Section -->
+            <t t-snippet="simstech_website.s_simstech_approach" string="Simstech Approach" group="simstech">
+                <keywords>approach, methodology, process, simstech</keywords>
+            </t>
+            
+            <!-- FAQ Section -->
+            <t t-snippet="simstech_website.s_simstech_faq" string="Simstech FAQ" group="simstech">
+                <keywords>faq, questions, answers, simstech</keywords>
+            </t>
+            
+            <!-- Contact Section -->
+            <t t-snippet="simstech_website.s_simstech_contact" string="Simstech Contact" group="simstech">
+                <keywords>contact, form, email, simstech</keywords>
+            </t>
+            
+            <!-- Divider -->
+            <t t-snippet="simstech_website.s_simstech_divider" string="Simstech Divider" group="simstech">
+                <keywords>divider, separator, line, simstech</keywords>
+            </t>
+        </xpath>
+    </template>
+
+    <!-- Simple Divider Snippet Definition -->
     <template id="s_simstech_divider" name="Simstech Divider">
         <section class="s_simstech_divider">
             <div class="simstech-container">
@@ -57,4 +68,3 @@
     </template>
 
 </odoo>
-

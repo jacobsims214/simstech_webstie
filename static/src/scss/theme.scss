@@ -121,10 +121,7 @@
 // -----------------------------------------------------------------------------
 
 .simstech-hero-bg {
-  background:
-    radial-gradient(1200px 600px at 80% -20%, rgba($simstech-accent, 0.18), transparent 40%),
-    radial-gradient(800px 400px at 0% 0%, rgba($simstech-signal, 0.18), transparent 45%),
-    linear-gradient(180deg, $simstech-cloud 0%, #F1F5F9 100%);
+  background: $simstech-cloud;
 }
 
 // -----------------------------------------------------------------------------

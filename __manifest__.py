@@ -39,6 +39,8 @@ Design Language:
         'website_crm',  # For contact forms
     ],
     'data': [
+        # SEO and meta
+        'views/seo/seo_data.xml',
         # Views and templates
         'views/layout.xml',
         'views/snippets/snippets.xml',
@@ -49,6 +51,7 @@ Design Language:
         'views/snippets/s_approach.xml',
         'views/snippets/s_faq.xml',
         'views/snippets/s_contact.xml',
+        'views/snippets/s_footer.xml',
         'views/pages/homepage.xml',
     ],
     'assets': {

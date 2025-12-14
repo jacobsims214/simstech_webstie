@@ -67,8 +67,18 @@
                                 What industries have you worked in?
                             </summary>
                             <p class="o_default_snippet_text">
-                                Healthcare, aviation, industrial manufacturing, software platforms, 
-                                and textiles.
+                                Healthcare, aviation, manufacturing, hospitality, marketing and media, 
+                                big data and analytics, and network engineering for campus environments.
+                            </p>
+                        </details>
+                        
+                        <details>
+                            <summary class="o_default_snippet_text">
+                                Do you do network engineering?
+                            </summary>
+                            <p class="o_default_snippet_text">
+                                Yes. Campus networks, infrastructure design, security architecture. 
+                                I've built and maintained networks for hospitals, hotels, and corporate campuses.
                             </p>
                         </details>
                     </div>
@@ -129,7 +139,15 @@
                     "name": "What industries have you worked in?",
                     "acceptedAnswer": {
                         "@type": "Answer",
-                        "text": "Healthcare, aviation, industrial manufacturing, software platforms, and textiles."
+                        "text": "Healthcare, aviation, manufacturing, hospitality, marketing and media, big data and analytics, and network engineering for campus environments."
+                    }
+                },
+                {
+                    "@type": "Question",
+                    "name": "Do you do network engineering?",
+                    "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "Yes. Campus networks, infrastructure design, security architecture. I've built and maintained networks for hospitals, hotels, and corporate campuses."
                     }
                 }
             ]
@@ -138,4 +156,3 @@
     </template>
 
 </odoo>
-

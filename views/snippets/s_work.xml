@@ -10,35 +10,63 @@
             <div class="simstech-container">
                 <h2 class="o_default_snippet_text">Where I've done this before</h2>
                 <p class="text-fog mt-2 o_default_snippet_text" style="max-width: 42rem;">
-                    I've worked across regulated, operationally complex environments where systems have to last.
+                    I've worked across regulated, operationally complex environments — from hospital networks to airport operations to hotel properties. Systems that have to work.
                 </p>
                 
                 <div class="work-grid mt-5">
                     <div class="work-card simstech-hover-rise">
                         <div class="work-title o_default_snippet_text">Healthcare</div>
                         <div class="work-desc o_default_snippet_text">
-                            Compliance, data integrity, reliability.
+                            Compliance, data integrity, reliability at scale.
                         </div>
                     </div>
                     
                     <div class="work-card simstech-hover-rise">
                         <div class="work-title o_default_snippet_text">Aviation</div>
                         <div class="work-desc o_default_snippet_text">
-                            Safety-critical systems and operations.
+                            Safety-critical systems and flight operations.
                         </div>
                     </div>
                     
                     <div class="work-card simstech-hover-rise">
                         <div class="work-title o_default_snippet_text">Manufacturing</div>
                         <div class="work-desc o_default_snippet_text">
-                            Ops, reporting, and automation.
+                            Production ops, reporting, and automation.
                         </div>
                     </div>
                     
                     <div class="work-card simstech-hover-rise">
-                        <div class="work-title o_default_snippet_text">Software platforms</div>
+                        <div class="work-title o_default_snippet_text">Hospitality</div>
                         <div class="work-desc o_default_snippet_text">
-                            Scaling teams and systems.
+                            Guest systems, property networks, operations.
+                        </div>
+                    </div>
+                    
+                    <div class="work-card simstech-hover-rise">
+                        <div class="work-title o_default_snippet_text">Marketing &amp; Media</div>
+                        <div class="work-desc o_default_snippet_text">
+                            Campaigns, analytics, content delivery.
+                        </div>
+                    </div>
+                    
+                    <div class="work-card simstech-hover-rise">
+                        <div class="work-title o_default_snippet_text">Big Data &amp; Analytics</div>
+                        <div class="work-desc o_default_snippet_text">
+                            Pipelines, warehouses, business intelligence.
+                        </div>
+                    </div>
+                    
+                    <div class="work-card simstech-hover-rise">
+                        <div class="work-title o_default_snippet_text">Network Engineering</div>
+                        <div class="work-desc o_default_snippet_text">
+                            Campus networks, infrastructure, security.
+                        </div>
+                    </div>
+                    
+                    <div class="work-card simstech-hover-rise">
+                        <div class="work-title o_default_snippet_text">Software Platforms</div>
+                        <div class="work-desc o_default_snippet_text">
+                            Scaling teams, systems, and products.
                         </div>
                     </div>
                 </div>
@@ -47,4 +75,3 @@
     </template>
 
 </odoo>
-

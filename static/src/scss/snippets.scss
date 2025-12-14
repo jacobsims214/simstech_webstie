@@ -10,25 +10,56 @@
 // -----------------------------------------------------------------------------
 
 .s_simstech_hero {
+  .hero-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 3rem;
+    align-items: center;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+    
+    @media (min-width: $simstech-breakpoint-lg) {
+      grid-template-columns: 1fr auto;
+      gap: 4rem;
+      padding-top: 7rem;
+      padding-bottom: 6rem;
+    }
+  }
+  
   .hero-content {
-    padding-top: 7rem;
-    padding-bottom: 6rem;
+    // Text content on the left
+  }
+  
+  .hero-brand {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    @media (min-width: $simstech-breakpoint-lg) {
+      justify-content: flex-end;
+    }
   }
   
   .hero-logo {
-    height: 4rem;
-    width: auto;
+    height: auto;
+    width: 100%;
+    max-width: 280px;
+    
+    @media (min-width: $simstech-breakpoint-lg) {
+      max-width: 320px;
+    }
   }
   
   .hero-tagline {
-    margin-top: 0.75rem;
     font-size: $simstech-font-size-sm;
     color: $simstech-fog;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
   }
   
   .hero-headline {
     margin-top: 1rem;
-    font-size: clamp(2.5rem, 6vw, 4.5rem);
+    font-size: clamp(2.25rem, 5vw, 4rem);
     font-weight: $simstech-font-weight-bold;
     line-height: 1.1;
     letter-spacing: $simstech-letter-spacing-tight;
@@ -40,26 +71,34 @@
   
   .hero-description {
     margin-top: 1.5rem;
-    font-size: 1.25rem;
+    font-size: 1.125rem;
     color: $simstech-fog;
-    max-width: 42rem;
+    max-width: 38rem;
     line-height: $simstech-line-height-relaxed;
+    
+    @media (min-width: $simstech-breakpoint-lg) {
+      font-size: 1.25rem;
+    }
   }
   
   .hero-cta {
-    margin-top: 2.5rem;
+    margin-top: 2rem;
     display: flex;
     flex-wrap: wrap;
     gap: 1rem;
   }
   
   .hero-proof {
-    margin-top: 2.5rem;
+    margin-top: 2rem;
     display: flex;
     flex-wrap: wrap;
-    gap: 1.5rem;
+    gap: 1rem;
     font-size: $simstech-font-size-sm;
     color: $simstech-fog;
+    
+    @media (min-width: $simstech-breakpoint-md) {
+      gap: 1.5rem;
+    }
     
     .separator {
       opacity: 0.4;

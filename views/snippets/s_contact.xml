@@ -2,11 +2,11 @@
 <odoo>
     <!-- =======================================================================
          Simstech Contact Section
-         Dark CTA section with contact form integration
+         Dark CTA section with contact button
     ======================================================================== -->
 
     <template id="s_simstech_contact" name="Simstech Contact">
-        <section id="contact" class="s_simstech_contact section-padding">
+        <section id="contact" class="s_simstech_contact simstech-section-dark section-padding">
             <div class="simstech-container">
                 <div class="contact-grid">
                     <!-- Left: Content -->
@@ -17,7 +17,7 @@
                             Tell me what's going on and I'll respond with next steps.
                         </p>
                         
-                        <div class="contact-tags">
+                        <div class="contact-tags mt-4">
                             <span class="simstech-pill simstech-pill-dark">Cloud</span>
                             <span class="simstech-pill simstech-pill-dark">Reliability</span>
                             <span class="simstech-pill simstech-pill-dark">Observability</span>
@@ -26,22 +26,12 @@
                         </div>
                     </div>
 
-                    <!-- Right: Form -->
-                    <div class="contact-form-wrapper">
-                        <div class="form-title o_default_snippet_text">Contact form</div>
-                        <p class="form-placeholder o_default_snippet_text">
-                            Drop your Odoo contact form here (Name, Email, Company, Message).
-                        </p>
-                        
-                        <!-- Placeholder for Odoo CRM form -->
-                        <div class="s_website_form_placeholder mt-3" data-snippet="s_website_form">
-                            <!-- The website_crm module provides the actual form -->
-                            <a href="/contactus" class="btn-simstech-primary w-100">
-                                Open contact form
-                            </a>
-                        </div>
-                        
-                        <p class="form-note o_default_snippet_text">
+                    <!-- Right: CTA -->
+                    <div class="contact-cta-wrapper">
+                        <a href="/contactus" class="btn-simstech-primary btn-simstech-lg w-100">
+                            Start a conversation
+                        </a>
+                        <p class="form-note mt-3 o_default_snippet_text" style="color: #9CA3AF; font-size: 0.875rem; text-align: center;">
                             No spam. No pressure. Just a conversation.
                         </p>
                     </div>
@@ -51,4 +41,3 @@
     </template>
 
 </odoo>
-
