@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <!-- =======================================================================
+         Simstech Homepage
+         Complete landing page with all sections and SEO optimization
+    ======================================================================== -->
+
+    <!-- Override the default homepage -->
+    <template id="homepage" name="Simstech Homepage">
+        <t t-call="website.layout">
+            <t t-set="pageName" t-value="'homepage'"/>
+            
+            <!-- SEO Meta -->
+            <t t-set="website_meta_title">Engineering &amp; Technology Consulting in Myrtle Beach, SC | Jacob Sims</t>
+            <t t-set="website_meta_description">Engineer-first consulting: cloud architecture, observability &amp; reliability, SaaS/tool selection, and practical AI integration with LLM monitoring. Local to Myrtle Beach, SC.</t>
+            <t t-set="website_meta_keywords">technology consulting, engineering consulting, cloud architecture, observability, reliability engineering, AI integration, LLM monitoring, Myrtle Beach SC, South Carolina</t>
+            
+            <!-- Open Graph -->
+            <t t-set="additional_title">Engineering &amp; Technology Consulting in Myrtle Beach, SC | Jacob Sims</t>
+            
+            <div id="wrap" class="oe_structure oe_empty">
+                
+                <!-- JSON-LD Structured Data for SEO -->
+                <script type="application/ld+json">
+                {
+                    "@context": "https://schema.org",
+                    "@type": "ProfessionalService",
+                    "name": "Jacob Sims – Engineering &amp; Technology Consulting",
+                    "description": "Engineer-first consulting for designing reliable systems, cloud architecture, observability, and practical AI integration. Services include tool/SaaS evaluation, automation, production operations, and LLM monitoring.",
+                    "url": "https://simstech.cloud",
+                    "telephone": "",
+                    "address": {
+                        "@type": "PostalAddress",
+                        "addressLocality": "Myrtle Beach",
+                        "addressRegion": "SC",
+                        "addressCountry": "US"
+                    },
+                    "geo": {
+                        "@type": "GeoCoordinates",
+                        "latitude": "33.6891",
+                        "longitude": "-78.8867"
+                    },
+                    "areaServed": [
+                        "Myrtle Beach, SC",
+                        "South Carolina",
+                        "United States"
+                    ],
+                    "serviceType": [
+                        "Technology Consulting",
+                        "Software Engineering Consulting",
+                        "Cloud Consulting",
+                        "Observability &amp; Reliability Engineering",
+                        "AI Integration Consulting",
+                        "LLM Observability"
+                    ],
+                    "knowsAbout": [
+                        "Cloud Architecture",
+                        "Observability",
+                        "Reliability Engineering",
+                        "Software Engineering",
+                        "Automation",
+                        "Artificial Intelligence",
+                        "LLMs",
+                        "LLM Observability",
+                        "Kubernetes",
+                        "Infrastructure as Code"
+                    ],
+                    "priceRange": "$$",
+                    "provider": {
+                        "@type": "Person",
+                        "name": "Jacob Sims",
+                        "jobTitle": "Engineering &amp; Technology Consultant",
+                        "knowsAbout": [
+                            "Cloud Architecture",
+                            "Observability",
+                            "Reliability Engineering",
+                            "AI/ML Operations"
+                        ]
+                    }
+                }
+                </script>
+                
+                <!-- Person Schema for Personal Branding -->
+                <script type="application/ld+json">
+                {
+                    "@context": "https://schema.org",
+                    "@type": "Person",
+                    "name": "Jacob Sims",
+                    "jobTitle": "Engineering &amp; Technology Consultant",
+                    "description": "Engineer-first technology consultant specializing in cloud architecture, observability, reliability engineering, and practical AI integration.",
+                    "url": "https://simstech.cloud",
+                    "sameAs": [],
+                    "address": {
+                        "@type": "PostalAddress",
+                        "addressLocality": "Myrtle Beach",
+                        "addressRegion": "SC",
+                        "addressCountry": "US"
+                    },
+                    "knowsAbout": [
+                        "Cloud Architecture",
+                        "Observability",
+                        "Reliability Engineering",
+                        "Software Engineering",
+                        "AI Integration",
+                        "LLM Observability"
+                    ]
+                }
+                </script>
+
+                <!-- Hero Section -->
+                <t t-call="simstech_website.s_simstech_hero"/>
+                
+                <!-- Services Section -->
+                <t t-call="simstech_website.s_simstech_services"/>
+                
+                <!-- Divider -->
+                <t t-call="simstech_website.s_simstech_divider"/>
+                
+                <!-- Problems Section -->
+                <t t-call="simstech_website.s_simstech_problems"/>
+                
+                <!-- Divider -->
+                <t t-call="simstech_website.s_simstech_divider"/>
+                
+                <!-- Work Experience Section -->
+                <t t-call="simstech_website.s_simstech_work"/>
+                
+                <!-- Approach Section -->
+                <t t-call="simstech_website.s_simstech_approach"/>
+                
+                <!-- FAQ Section -->
+                <t t-call="simstech_website.s_simstech_faq"/>
+                
+                <!-- FAQ Schema (hidden) -->
+                <t t-call="simstech_website.s_simstech_faq_schema"/>
+                
+                <!-- Contact Section -->
+                <t t-call="simstech_website.s_simstech_contact"/>
+                
+            </div>
+        </t>
+    </template>
+
+    <!-- Register as the default homepage -->
+    <record id="homepage_page" model="website.page">
+        <field name="name">Home</field>
+        <field name="url">/</field>
+        <field name="view_id" ref="homepage"/>
+        <field name="is_published">True</field>
+        <field name="website_indexed">True</field>
+    </record>
+
+</odoo>
+

@@ -1,0 +1,368 @@
+// =============================================================================
+// Simstech Snippet Styles
+// =============================================================================
+
+@import 'variables';
+
+// -----------------------------------------------------------------------------
+// Hero Snippet
+// -----------------------------------------------------------------------------
+
+.s_simstech_hero {
+  .hero-content {
+    padding-top: 7rem;
+    padding-bottom: 6rem;
+  }
+  
+  .hero-logo {
+    height: 4rem;
+    width: auto;
+  }
+  
+  .hero-tagline {
+    margin-top: 0.75rem;
+    font-size: $font-size-sm;
+    color: $simstech-fog;
+  }
+  
+  .hero-headline {
+    margin-top: 1rem;
+    font-size: clamp(2.5rem, 6vw, 4.5rem);
+    font-weight: $font-weight-bold;
+    line-height: 1.1;
+    letter-spacing: $letter-spacing-tight;
+    
+    .text-muted {
+      color: $simstech-fog;
+    }
+  }
+  
+  .hero-description {
+    margin-top: 1.5rem;
+    font-size: 1.25rem;
+    color: $simstech-fog;
+    max-width: 42rem;
+    line-height: $line-height-relaxed;
+  }
+  
+  .hero-cta {
+    margin-top: 2.5rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+  
+  .hero-proof {
+    margin-top: 2.5rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    font-size: $font-size-sm;
+    color: $simstech-fog;
+    
+    .separator {
+      opacity: 0.4;
+    }
+  }
+}
+
+// -----------------------------------------------------------------------------
+// Services Snippet
+// -----------------------------------------------------------------------------
+
+.s_simstech_services {
+  .services-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 4rem;
+    align-items: start;
+    
+    @media (min-width: $breakpoint-lg) {
+      grid-template-columns: 1fr 2fr;
+    }
+  }
+  
+  .services-header {
+    h2 {
+      font-size: $h2-font-size;
+      font-weight: $font-weight-semibold;
+    }
+    
+    p {
+      margin-top: 1rem;
+      color: $simstech-fog;
+      max-width: 20rem;
+    }
+  }
+  
+  .services-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    
+    li {
+      display: flex;
+      gap: 1.5rem;
+      padding: 0.5rem 0;
+      transition: transform $transition-base;
+      
+      &:hover {
+        transform: translateY(-2px);
+      }
+      
+      .bullet {
+        color: $simstech-accent;
+        font-size: 1.25rem;
+        flex-shrink: 0;
+      }
+      
+      .service-title {
+        font-weight: $font-weight-semibold;
+      }
+      
+      .service-desc {
+        margin-top: 0.25rem;
+        font-size: $font-size-sm;
+        color: $simstech-fog;
+      }
+    }
+  }
+}
+
+// -----------------------------------------------------------------------------
+// Problems Snippet
+// -----------------------------------------------------------------------------
+
+.s_simstech_problems {
+  .problems-list {
+    max-width: 48rem;
+    
+    .problem-item {
+      display: flex;
+      gap: 1.5rem;
+      
+      .arrow {
+        color: $simstech-accent;
+        flex-shrink: 0;
+      }
+      
+      .problem-title {
+        font-weight: $font-weight-semibold;
+      }
+      
+      .problem-solution {
+        margin-top: 0.25rem;
+        font-size: $font-size-sm;
+        color: $simstech-fog;
+      }
+    }
+  }
+}
+
+// -----------------------------------------------------------------------------
+// Work/Experience Snippet
+// -----------------------------------------------------------------------------
+
+.s_simstech_work {
+  background-color: white;
+  border-top: 1px solid $simstech-runway;
+  border-bottom: 1px solid $simstech-runway;
+  
+  .work-grid {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 1.5rem;
+    
+    @media (min-width: $breakpoint-md) {
+      grid-template-columns: repeat(4, 1fr);
+    }
+  }
+  
+  .work-card {
+    padding: 1.5rem;
+    transition: transform $transition-base;
+    
+    &:hover {
+      transform: translateY(-2px);
+    }
+    
+    .work-title {
+      font-weight: $font-weight-semibold;
+    }
+    
+    .work-desc {
+      margin-top: 0.5rem;
+      font-size: $font-size-sm;
+      color: $simstech-fog;
+    }
+  }
+}
+
+// -----------------------------------------------------------------------------
+// Approach Snippet
+// -----------------------------------------------------------------------------
+
+.s_simstech_approach {
+  .approach-cards {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 1.5rem;
+    
+    @media (min-width: $breakpoint-md) {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+  
+  .approach-card {
+    padding: 1.5rem;
+    border-radius: $border-radius-xl;
+    border: 1px solid $simstech-runway;
+    background: white;
+    
+    .card-title {
+      font-weight: $font-weight-semibold;
+    }
+    
+    .card-desc {
+      margin-top: 0.5rem;
+      font-size: $font-size-sm;
+      color: $simstech-fog;
+    }
+  }
+  
+  .next-steps {
+    margin-top: 2.5rem;
+    background: white;
+    border: 1px solid $simstech-runway;
+    border-radius: $border-radius-2xl;
+    padding: 2rem;
+    
+    h3 {
+      font-size: 1.125rem;
+      font-weight: $font-weight-semibold;
+    }
+    
+    .steps-grid {
+      margin-top: 1.5rem;
+      display: grid;
+      grid-template-columns: repeat(1, 1fr);
+      gap: 1.5rem;
+      
+      @media (min-width: $breakpoint-md) {
+        grid-template-columns: repeat(3, 1fr);
+      }
+    }
+    
+    .step {
+      padding: 1.25rem;
+      border-radius: $border-radius-lg;
+      border: 1px solid $simstech-runway;
+      
+      .step-title {
+        font-weight: $font-weight-semibold;
+      }
+      
+      .step-desc {
+        margin-top: 0.5rem;
+        font-size: $font-size-sm;
+        color: $simstech-fog;
+      }
+    }
+  }
+}
+
+// -----------------------------------------------------------------------------
+// FAQ Snippet
+// -----------------------------------------------------------------------------
+
+.s_simstech_faq {
+  .faq-container {
+    background: white;
+    border: 1px solid $simstech-runway;
+    border-radius: $border-radius-2xl;
+    padding: 2rem;
+    
+    h2 {
+      font-size: $h2-font-size;
+      font-weight: $font-weight-semibold;
+    }
+    
+    .faq-grid {
+      margin-top: 1.5rem;
+      display: grid;
+      grid-template-columns: repeat(1, 1fr);
+      gap: 1rem;
+      
+      @media (min-width: $breakpoint-md) {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+  }
+}
+
+// -----------------------------------------------------------------------------
+// Contact Snippet
+// -----------------------------------------------------------------------------
+
+.s_simstech_contact {
+  background-color: $simstech-ink;
+  color: white;
+  
+  .contact-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2.5rem;
+    align-items: center;
+    
+    @media (min-width: $breakpoint-lg) {
+      grid-template-columns: 7fr 5fr;
+    }
+  }
+  
+  .contact-content {
+    h2 {
+      font-size: clamp(1.875rem, 4vw, 2.5rem);
+      font-weight: $font-weight-bold;
+      color: white;
+    }
+    
+    p {
+      margin-top: 1rem;
+      color: rgba(white, 0.7);
+      max-width: 36rem;
+    }
+    
+    .contact-tags {
+      margin-top: 2rem;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.75rem;
+    }
+  }
+  
+  .contact-form-wrapper {
+    background: rgba(white, 0.05);
+    border: 1px solid rgba(white, 0.15);
+    border-radius: $border-radius-2xl;
+    padding: 2rem;
+    
+    .form-title {
+      font-size: $font-size-sm;
+      color: rgba(white, 0.9);
+      font-weight: $font-weight-semibold;
+    }
+    
+    .form-placeholder {
+      margin-top: 0.5rem;
+      font-size: $font-size-sm;
+      color: rgba(white, 0.7);
+    }
+    
+    .form-note {
+      margin-top: 0.75rem;
+      font-size: $font-size-xs;
+      color: rgba(white, 0.5);
+    }
+  }
+}
+

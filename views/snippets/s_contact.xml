@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <!-- =======================================================================
+         Simstech Contact Section
+         Dark CTA section with contact form integration
+    ======================================================================== -->
+
+    <template id="s_simstech_contact" name="Simstech Contact">
+        <section id="contact" class="s_simstech_contact section-padding">
+            <div class="simstech-container">
+                <div class="contact-grid">
+                    <!-- Left: Content -->
+                    <div class="contact-content">
+                        <h2 class="o_default_snippet_text">Want to talk?</h2>
+                        <p class="o_default_snippet_text">
+                            If you're unsure what the right move is — that's a great place to start. 
+                            Tell me what's going on and I'll respond with next steps.
+                        </p>
+                        
+                        <div class="contact-tags">
+                            <span class="simstech-pill simstech-pill-dark">Cloud</span>
+                            <span class="simstech-pill simstech-pill-dark">Reliability</span>
+                            <span class="simstech-pill simstech-pill-dark">Observability</span>
+                            <span class="simstech-pill simstech-pill-dark">Integrations</span>
+                            <span class="simstech-pill simstech-pill-dark">AI (when it fits)</span>
+                        </div>
+                    </div>
+
+                    <!-- Right: Form -->
+                    <div class="contact-form-wrapper">
+                        <div class="form-title o_default_snippet_text">Contact form</div>
+                        <p class="form-placeholder o_default_snippet_text">
+                            Drop your Odoo contact form here (Name, Email, Company, Message).
+                        </p>
+                        
+                        <!-- Placeholder for Odoo CRM form -->
+                        <div class="s_website_form_placeholder mt-3" data-snippet="s_website_form">
+                            <!-- The website_crm module provides the actual form -->
+                            <a href="/contactus" class="btn-simstech-primary w-100">
+                                Open contact form
+                            </a>
+                        </div>
+                        
+                        <p class="form-note o_default_snippet_text">
+                            No spam. No pressure. Just a conversation.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </template>
+
+</odoo>
+

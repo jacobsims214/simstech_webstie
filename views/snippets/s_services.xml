@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <!-- =======================================================================
+         Simstech Services Section
+         Lists core service offerings with icons
+    ======================================================================== -->
+
+    <template id="s_simstech_services" name="Simstech Services">
+        <section id="services" class="s_simstech_services section-padding">
+            <div class="simstech-container">
+                <div class="services-grid">
+                    <!-- Left Column: Header -->
+                    <div class="services-header">
+                        <h2 class="o_default_snippet_text">What I help with</h2>
+                        <p class="o_default_snippet_text">
+                            This is the kind of work I'm usually pulled into when systems start to strain.
+                        </p>
+                        <a href="/contactus" class="btn-simstech-primary mt-4">
+                            Start a conversation
+                        </a>
+                    </div>
+
+                    <!-- Right Column: Services List -->
+                    <div>
+                        <ul class="services-list">
+                            <li class="simstech-hover-rise mb-4">
+                                <span class="bullet">•</span>
+                                <div>
+                                    <div class="service-title o_default_snippet_text">Cloud &amp; platform architecture</div>
+                                    <div class="service-desc o_default_snippet_text">
+                                        Secure foundations, cost control, and systems teams can actually run.
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="simstech-hover-rise mb-4">
+                                <span class="bullet">•</span>
+                                <div>
+                                    <div class="service-title o_default_snippet_text">Observability &amp; reliability engineering</div>
+                                    <div class="service-desc o_default_snippet_text">
+                                        Visibility into what's breaking, why, and how often.
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="simstech-hover-rise mb-4">
+                                <span class="bullet">•</span>
+                                <div>
+                                    <div class="service-title o_default_snippet_text">Integrations &amp; automation</div>
+                                    <div class="service-desc o_default_snippet_text">
+                                        Reducing manual work and fragile glue code.
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="simstech-hover-rise">
+                                <span class="bullet">•</span>
+                                <div>
+                                    <div class="service-title o_default_snippet_text">AI enablement (when it fits)</div>
+                                    <div class="service-desc o_default_snippet_text">
+                                        Bringing AI into workflows with evaluation and guardrails.
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </template>
+
+</odoo>
+

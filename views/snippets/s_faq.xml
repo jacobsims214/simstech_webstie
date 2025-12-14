@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <!-- =======================================================================
+         Simstech FAQ Section
+         Common questions - SEO optimized with structured data
+    ======================================================================== -->
+
+    <template id="s_simstech_faq" name="Simstech FAQ">
+        <section id="faq" class="s_simstech_faq section-padding" style="padding-bottom: 2.5rem;">
+            <div class="simstech-container">
+                <div class="faq-container simstech-faq">
+                    <h2 class="o_default_snippet_text">Common questions</h2>
+                    
+                    <div class="faq-grid">
+                        <details>
+                            <summary class="o_default_snippet_text">
+                                Do you work locally in Myrtle Beach, SC?
+                            </summary>
+                            <p class="o_default_snippet_text">
+                                Yes — locally or remote. Most engagements start with a short call 
+                                to understand goals and constraints.
+                            </p>
+                        </details>
+                        
+                        <details>
+                            <summary class="o_default_snippet_text">
+                                Do you help with cloud consulting and tool/SaaS selection?
+                            </summary>
+                            <p class="o_default_snippet_text">
+                                Yes. Vendor evaluation, build-vs-buy, integration planning, and 
+                                cost/lock-in control.
+                            </p>
+                        </details>
+                        
+                        <details>
+                            <summary class="o_default_snippet_text">
+                                Can you improve observability and reliability?
+                            </summary>
+                            <p class="o_default_snippet_text">
+                                Yes — metrics, logs, traces, dashboards, SLOs, alerting, and 
+                                operational practices that stick.
+                            </p>
+                        </details>
+                        
+                        <details>
+                            <summary class="o_default_snippet_text">
+                                How do you approach AI?
+                            </summary>
+                            <p class="o_default_snippet_text">
+                                AI is an asset in the toolbox. I focus on workflow integration and 
+                                operating it safely with evaluation and LLM observability.
+                            </p>
+                        </details>
+                        
+                        <details>
+                            <summary class="o_default_snippet_text">
+                                Do you build software or just advise?
+                            </summary>
+                            <p class="o_default_snippet_text">
+                                Both. Advisory, embedded support, or end-to-end build — whatever 
+                                is most effective.
+                            </p>
+                        </details>
+                        
+                        <details>
+                            <summary class="o_default_snippet_text">
+                                What industries have you worked in?
+                            </summary>
+                            <p class="o_default_snippet_text">
+                                Healthcare, aviation, industrial manufacturing, software platforms, 
+                                and textiles.
+                            </p>
+                        </details>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </template>
+
+    <!-- FAQ Schema.org Structured Data (for SEO) -->
+    <template id="s_simstech_faq_schema" name="FAQ Schema">
+        <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "FAQPage",
+            "mainEntity": [
+                {
+                    "@type": "Question",
+                    "name": "Do you work locally in Myrtle Beach, SC?",
+                    "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "Yes — locally or remote. Most engagements start with a short call to understand goals and constraints."
+                    }
+                },
+                {
+                    "@type": "Question",
+                    "name": "Do you help with cloud consulting and tool/SaaS selection?",
+                    "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "Yes. Vendor evaluation, build-vs-buy, integration planning, and cost/lock-in control."
+                    }
+                },
+                {
+                    "@type": "Question",
+                    "name": "Can you improve observability and reliability?",
+                    "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "Yes — metrics, logs, traces, dashboards, SLOs, alerting, and operational practices that stick."
+                    }
+                },
+                {
+                    "@type": "Question",
+                    "name": "How do you approach AI?",
+                    "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "AI is an asset in the toolbox. I focus on workflow integration and operating it safely with evaluation and LLM observability."
+                    }
+                },
+                {
+                    "@type": "Question",
+                    "name": "Do you build software or just advise?",
+                    "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "Both. Advisory, embedded support, or end-to-end build — whatever is most effective."
+                    }
+                },
+                {
+                    "@type": "Question",
+                    "name": "What industries have you worked in?",
+                    "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "Healthcare, aviation, industrial manufacturing, software platforms, and textiles."
+                    }
+                }
+            ]
+        }
+        </script>
+    </template>
+
+</odoo>
+

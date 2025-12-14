@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <!-- =======================================================================
+         Simstech Problems/Recognition Section
+         Recognition triggers - problems visitors might identify with
+    ======================================================================== -->
+
+    <template id="s_simstech_problems" name="Simstech Problems">
+        <section class="s_simstech_problems section-padding">
+            <div class="simstech-container">
+                <h2 class="o_default_snippet_text">If any of this sounds familiar</h2>
+                
+                <div class="problems-list mt-5">
+                    <div class="problem-item mb-4">
+                        <span class="arrow">→</span>
+                        <div>
+                            <div class="problem-title o_default_snippet_text">
+                                "We're trying to modernize, but it's messy."
+                            </div>
+                            <div class="problem-solution o_default_snippet_text">
+                                Clarity, tradeoffs, and a plan that reduces risk.
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="problem-item mb-4">
+                        <span class="arrow">→</span>
+                        <div>
+                            <div class="problem-title o_default_snippet_text">
+                                "It's fragile and hard to operate."
+                            </div>
+                            <div class="problem-solution o_default_snippet_text">
+                                Visibility and calmer day‑to‑day operations.
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="problem-item">
+                        <span class="arrow">→</span>
+                        <div>
+                            <div class="problem-title o_default_snippet_text">
+                                "We want to use AI — safely and effectively."
+                            </div>
+                            <div class="problem-solution o_default_snippet_text">
+                                Integration with measurement and guardrails.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </template>
+
+</odoo>
+

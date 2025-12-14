@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <!-- =======================================================================
+         Simstech Approach Section
+         Methodology and "what happens next" process
+    ======================================================================== -->
+
+    <template id="s_simstech_approach" name="Simstech Approach">
+        <section id="approach" class="s_simstech_approach section-padding">
+            <div class="simstech-container">
+                <h2 class="o_default_snippet_text">How I approach the work</h2>
+                
+                <!-- Philosophy Cards -->
+                <div class="approach-cards mt-4">
+                    <div class="approach-card">
+                        <div class="card-title o_default_snippet_text">Business first</div>
+                        <div class="card-desc o_default_snippet_text">
+                            Goals → constraints → plan → delivery.
+                        </div>
+                    </div>
+                    
+                    <div class="approach-card">
+                        <div class="card-title o_default_snippet_text">AI is an asset</div>
+                        <div class="card-desc o_default_snippet_text">
+                            Use it where it helps. Measure it. Monitor it.
+                        </div>
+                    </div>
+                    
+                    <div class="approach-card">
+                        <div class="card-title o_default_snippet_text">Reliability is the product</div>
+                        <div class="card-desc o_default_snippet_text">
+                            Visibility, ownership, and sane operations.
+                        </div>
+                    </div>
+                </div>
+
+                <!-- What Happens Next (reduces contact anxiety) -->
+                <div class="next-steps">
+                    <h3 class="o_default_snippet_text">What happens after you reach out</h3>
+                    
+                    <div class="steps-grid">
+                        <div class="step">
+                            <div class="step-title o_default_snippet_text">1) Quick call</div>
+                            <div class="step-desc o_default_snippet_text">
+                                15–20 minutes to understand context.
+                            </div>
+                        </div>
+                        
+                        <div class="step">
+                            <div class="step-title o_default_snippet_text">2) Clarity</div>
+                            <div class="step-desc o_default_snippet_text">
+                                I outline goals, constraints, and options.
+                            </div>
+                        </div>
+                        
+                        <div class="step">
+                            <div class="step-title o_default_snippet_text">3) Next step</div>
+                            <div class="step-desc o_default_snippet_text">
+                                A practical plan — or a clean handoff.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </template>
+
+</odoo>
+

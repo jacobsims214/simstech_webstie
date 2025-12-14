@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Engineering & technology consulting in Myrtle Beach, SC. I help people and organizations design reliable systems, choose the right cloud and SaaS tools, and integrate AI effectively with observability and strategy. Local and remote." />
+  <title>Engineering & Technology Consulting in Myrtle Beach, SC | Jacob Sims</title>
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Engineering & Technology Consulting in Myrtle Beach, SC | Jacob Sims" />
+  <meta property="og:description" content="Engineer-first consulting: cloud architecture, observability & reliability, SaaS/tool selection, and practical AI integration with LLM monitoring." />
+  <meta property="og:type" content="website" />
+
+  <!-- Local/Service Schema (keep URL blank until your domain is known) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ProfessionalService",
+    "name": "Jacob Sims – Engineering & Technology Consulting",
+    "areaServed": ["Myrtle Beach, SC", "South Carolina", "United States"],
+    "serviceType": [
+      "Technology Consulting",
+      "Software Engineering Consulting",
+      "Cloud Consulting",
+      "Observability & Reliability Engineering",
+      "AI Integration Consulting",
+      "LLM Observability"
+    ],
+    "description": "Engineer-first consulting for designing reliable systems, cloud architecture, observability, and practical AI integration. Services include tool/SaaS evaluation, automation, production operations, and LLM monitoring.",
+    "knowsAbout": [
+      "Cloud Architecture",
+      "Observability",
+      "Reliability Engineering",
+      "Software Engineering",
+      "Automation",
+      "Artificial Intelligence",
+      "LLMs",
+      "LLM Observability"
+    ],
+    "url": "",
+    "provider": {"@type": "Person", "name": "Jacob Sims"}
+  }
+  </script>
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    :root {
+      /* Brand: Modern Builder / Engineer-Rider */
+      --ink: #0B0F14;
+      --charcoal: #111827;
+      --steel: #1F2937;
+      --cloud: #F8FAFC;
+      --fog: #6B7280;
+      --runway: #E5E7EB;
+      --signal: #2563EB; /* confident blue */
+      --accent: #F97316; /* kinetic orange */
+    }
+
+    /* Hero gradient + motion cue */
+    .hero-field {
+      background:
+        radial-gradient(1200px 600px at 80% -20%, rgba(249,115,22,0.18), transparent 40%),
+        radial-gradient(800px 400px at 0% 0%, rgba(37,99,235,0.18), transparent 45%),
+        linear-gradient(180deg, #F8FAFC 0%, #F1F5F9 100%);
+    }
+
+    /* Section separators – lighter, calmer */
+    .flow-divider {
+      height: 1px;
+      background: linear-gradient(90deg, transparent, rgba(0,0,0,0.12), transparent);
+      margin: 4rem 0;
+    }
+
+    /* Reduce boxiness */
+    .ghost-card {
+      background: transparent;
+      border: none;
+    }
+
+    .tap {
+      min-height: 44px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      transition: transform 180ms ease, box-shadow 180ms ease, background-color 180ms ease;
+    }
+
+    .tap:hover {
+      transform: translateY(-1px);
+    }
+
+    /* Subtle motion cues */
+    .hover-rise {
+      transition: transform 220ms ease, opacity 220ms ease;
+    }
+    .hover-rise:hover {
+      transform: translateY(-2px);
+    }
+
+    .fade-in {
+      opacity: 0;
+      transform: translateY(8px);
+      animation: fadeUp 600ms ease forwards;
+    }
+
+    @keyframes fadeUp {
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+  </style>
+</head>
+
+<body class="bg-[var(--cloud)] text-[var(--ink)] font-sans">
+
+  <!-- NAV -->
+  <header class="sticky top-0 z-40 bg-[var(--cloud)]/90 backdrop-blur border-b border-[var(--runway)]">
+    <nav class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+      <a href="#top" class="flex items-center gap-3" aria-label="Jacob Sims">
+        <img src="/mnt/data/Jacob Sims.png" alt="Jacob Sims – Engineering Systems Reliability" class="h-8 w-auto" />
+      </a>
+      <div class="hidden lg:flex items-center gap-3 text-xs text-[var(--fog)]">
+        <a class="hover:text-[var(--signal)]" href="#contact" aria-label="Email">Email</a>
+        <span class="opacity-40">•</span>
+        <a class="hover:text-[var(--signal)]" href="#work" aria-label="Portfolio">Portfolio</a>
+        <span class="opacity-40">•</span>
+        <a class="hover:text-[var(--signal)]" href="#services" aria-label="Services">Services</a>
+      </div>
+      <div class="hidden md:flex items-center gap-6 text-sm text-[var(--fog)]">
+        <a href="#services" class="hover:text-[var(--signal)]">Services</a>
+        <a href="#work" class="hover:text-[var(--signal)]">Work</a>
+        <a href="#approach" class="hover:text-[var(--signal)]">Approach</a>
+        <a href="#faq" class="hover:text-[var(--signal)]">FAQ</a>
+        <a href="#contact" class="tap px-4 py-2 rounded-lg bg-[var(--signal)] text-white font-semibold shadow hover:shadow-md transition">Contact</a>
+      </div>
+      <a href="#contact" class="md:hidden tap px-4 py-2 rounded-lg bg-[var(--signal)] text-white font-semibold shadow">Contact</a>
+    </nav>
+  </header>
+
+  <!-- HERO / DECISION ZONE -->
+  <main id="top">
+    <!-- HERO / IDENTITY -->
+    <section class="hero-field fade-in">
+      <div class="max-w-7xl mx-auto px-6 pt-28 pb-24">
+        <div class="mb-6">
+        <img src="/mnt/data/Jacob Sims.png" alt="Jacob Sims signature logo" class="h-16 w-auto" />
+        <p class="mt-3 text-sm text-[var(--fog)]">Myrtle Beach, SC • Engineering • Systems • Reliability</p>
+      </div>
+        <h1 class="mt-4 text-5xl md:text-7xl font-bold leading-tight tracking-tight">
+          Engineer first.<br />
+          <span class="text-[var(--fog)]">I build systems that last.</span>
+        </h1>
+        <p class="mt-6 text-xl text-[var(--fog)] max-w-2xl">
+          I work with people and teams facing real‑world complexity — messy operations, unclear tech decisions, reliability problems, or growth pressure. My job is to understand the business first, then engineer practical systems: cloud platforms, observability, integrations, and AI only when it actually makes sense.
+        </p>
+        <div class="mt-10 flex flex-wrap gap-4">
+          <a href="#contact" class="tap px-9 py-4 rounded-2xl bg-[var(--signal)] text-white font-semibold shadow hover:shadow-lg transition">Start a conversation</a>
+          <a href="#work" class="tap px-9 py-4 rounded-2xl border border-[var(--runway)] bg-white font-semibold">See my work</a>
+        </div>
+        <div class="mt-10 flex flex-wrap gap-6 text-sm text-[var(--fog)]">
+          <span>10+ years engineering</span>
+          <span>•</span>
+          <span>Healthcare, aviation, manufacturing</span>
+          <span>•</span>
+          <span>Builder, not buzzwords</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- SERVICES / STREAMLINED -->
+    <section id="services" class="max-w-7xl mx-auto px-6 py-28">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-16 items-start">
+        <div class="lg:col-span-4">
+          <h2 class="text-2xl font-semibold">What I help with</h2>
+          <p class="mt-4 text-[var(--fog)] max-w-sm">
+            This is the kind of work I’m usually pulled into when systems start to strain.
+          </p>
+          <a href="#contact" class="mt-8 inline-flex tap px-6 py-3 rounded-xl bg-[var(--signal)] text-white font-semibold shadow hover:shadow-md transition">Start a conversation</a>
+        </div>
+        <div class="lg:col-span-8">
+          <ul class="space-y-10">
+            <li class="flex gap-6 hover-rise">
+              <span class="text-[var(--accent)] text-xl">•</span>
+              <div>
+                <div class="font-semibold">Cloud & platform architecture</div>
+                <div class="mt-1 text-sm text-[var(--fog)]">Secure foundations, cost control, and systems teams can actually run.</div>
+              </div>
+            </li>
+            <li class="flex gap-6 hover-rise">
+              <span class="text-[var(--accent)] text-xl">•</span>
+              <div>
+                <div class="font-semibold">Observability & reliability engineering</div>
+                <div class="mt-1 text-sm text-[var(--fog)]">Visibility into what’s breaking, why, and how often.</div>
+              </div>
+            </li>
+            <li class="flex gap-6 hover-rise">
+              <span class="text-[var(--accent)] text-xl">•</span>
+              <div>
+                <div class="font-semibold">Integrations & automation</div>
+                <div class="mt-1 text-sm text-[var(--fog)]">Reducing manual work and fragile glue code.</div>
+              </div>
+            </li>
+            <li class="flex gap-6 hover-rise">
+              <span class="text-[var(--accent)] text-xl">•</span>
+              <div>
+                <div class="font-semibold">AI enablement (when it fits)</div>
+                <div class="mt-1 text-sm text-[var(--fog)]">Bringing AI into workflows with evaluation and guardrails.</div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <div class="flow-divider"></div>
+
+    <!-- PROBLEMS (recognition triggers) -->
+    <section class="max-w-7xl mx-auto px-6 py-24">
+      <h2 class="text-2xl font-semibold">If any of this sounds familiar</h2>
+      <div class="mt-10 max-w-3xl">
+        <div class="space-y-8">
+          <div class="flex gap-6">
+            <span class="text-[var(--accent)]">→</span>
+            <div>
+              <div class="font-semibold">“We’re trying to modernize, but it’s messy.”</div>
+              <div class="mt-1 text-sm text-[var(--fog)]">Clarity, tradeoffs, and a plan that reduces risk.</div>
+            </div>
+          </div>
+          <div class="flex gap-6">
+            <span class="text-[var(--accent)]">→</span>
+            <div>
+              <div class="font-semibold">“It’s fragile and hard to operate.”</div>
+              <div class="mt-1 text-sm text-[var(--fog)]">Visibility and calmer day‑to‑day operations.</div>
+            </div>
+          </div>
+          <div class="flex gap-6">
+            <span class="text-[var(--accent)]">→</span>
+            <div>
+              <div class="font-semibold">“We want to use AI — safely and effectively.”</div>
+              <div class="mt-1 text-sm text-[var(--fog)]">Integration with measurement and guardrails.</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="flow-divider"></div>
+
+    <!-- WORK / EXPERIENCE STRIP -->
+    <section id="work" class="bg-white border-y border-[var(--runway)]">
+      <div class="max-w-7xl mx-auto px-6 py-20">
+        <h2 class="text-2xl font-semibold">Where I’ve done this before</h2>
+        <p class="mt-2 text-[var(--fog)] max-w-2xl">
+          I’ve worked across regulated, operationally complex environments where systems have to last.
+        </p>
+        <div class="mt-10 grid grid-cols-1 md:grid-cols-4 gap-6">
+          <div class="p-6 hover-rise">
+            <div class="font-semibold">Healthcare</div>
+            <div class="mt-2 text-sm text-[var(--fog)]">Compliance, data integrity, reliability.</div>
+          </div>
+          <div class="p-6 hover-rise">
+            <div class="font-semibold">Aviation</div>
+            <div class="mt-2 text-sm text-[var(--fog)]">Safety-critical systems and operations.</div>
+          </div>
+          <div class="p-6 hover-rise">
+            <div class="font-semibold">Manufacturing</div>
+            <div class="mt-2 text-sm text-[var(--fog)]">Ops, reporting, and automation.</div>
+          </div>
+          <div class="p-6 hover-rise">
+            <div class="font-semibold">Software platforms</div>
+            <div class="mt-2 text-sm text-[var(--fog)]">Scaling teams and systems.</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- APPROACH (minimal text) -->
+    <section id="approach" class="max-w-7xl mx-auto px-6 py-20">
+      <h2 class="text-2xl font-semibold">How I approach the work</h2>
+      <div class="mt-8 grid grid-cols-1 md:grid-cols-3 gap-6">
+        <div class="p-6 rounded-2xl border border-[var(--runway)] bg-white">
+          <div class="font-semibold">Business first</div>
+          <div class="mt-2 text-sm text-[var(--fog)]">Goals → constraints → plan → delivery.</div>
+        </div>
+        <div class="p-6 rounded-2xl border border-[var(--runway)] bg-white">
+          <div class="font-semibold">AI is an asset</div>
+          <div class="mt-2 text-sm text-[var(--fog)]">Use it where it helps. Measure it. Monitor it.</div>
+        </div>
+        <div class="p-6 rounded-2xl border border-[var(--runway)] bg-white">
+          <div class="font-semibold">Reliability is the product</div>
+          <div class="mt-2 text-sm text-[var(--fog)]">Visibility, ownership, and sane operations.</div>
+        </div>
+      </div>
+
+      <!-- What happens next (reduces contact anxiety) -->
+      <div class="mt-10 bg-white border border-[var(--runway)] rounded-3xl p-8">
+        <h3 class="text-lg font-semibold">What happens after you reach out</h3>
+        <div class="mt-6 grid grid-cols-1 md:grid-cols-3 gap-6 text-sm">
+          <div class="p-5 rounded-2xl border border-[var(--runway)]">
+            <div class="font-semibold">1) Quick call</div>
+            <div class="mt-2 text-[var(--fog)]">15–20 minutes to understand context.</div>
+          </div>
+          <div class="p-5 rounded-2xl border border-[var(--runway)]">
+            <div class="font-semibold">2) Clarity</div>
+            <div class="mt-2 text-[var(--fog)]">I outline goals, constraints, and options.</div>
+          </div>
+          <div class="p-5 rounded-2xl border border-[var(--runway)]">
+            <div class="font-semibold">3) Next step</div>
+            <div class="mt-2 text-[var(--fog)]">A practical plan — or a clean handoff.</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ (SEO + not text-heavy via details) -->
+    <section id="faq" class="max-w-7xl mx-auto px-6 pb-10">
+      <div class="bg-white border border-[var(--runway)] rounded-3xl p-8">
+        <h2 class="text-2xl font-semibold">Common questions</h2>
+        <div class="mt-6 grid grid-cols-1 md:grid-cols-2 gap-4">
+          <details class="p-5 rounded-2xl border border-[var(--runway)]">
+            <summary class="font-semibold cursor-pointer">Do you work locally in Myrtle Beach, SC?</summary>
+            <p class="mt-3 text-sm text-[var(--fog)]">Yes — locally or remote. Most engagements start with a short call to understand goals and constraints.</p>
+          </details>
+          <details class="p-5 rounded-2xl border border-[var(--runway)]">
+            <summary class="font-semibold cursor-pointer">Do you help with cloud consulting and tool/SaaS selection?</summary>
+            <p class="mt-3 text-sm text-[var(--fog)]">Yes. Vendor evaluation, build-vs-buy, integration planning, and cost/lock-in control.</p>
+          </details>
+          <details class="p-5 rounded-2xl border border-[var(--runway)]">
+            <summary class="font-semibold cursor-pointer">Can you improve observability and reliability?</summary>
+            <p class="mt-3 text-sm text-[var(--fog)]">Yes — metrics, logs, traces, dashboards, SLOs, alerting, and operational practices that stick.</p>
+          </details>
+          <details class="p-5 rounded-2xl border border-[var(--runway)]">
+            <summary class="font-semibold cursor-pointer">How do you approach AI?</summary>
+            <p class="mt-3 text-sm text-[var(--fog)]">AI is an asset in the toolbox. I focus on workflow integration and operating it safely with evaluation and LLM observability.</p>
+          </details>
+          <details class="p-5 rounded-2xl border border-[var(--runway)]">
+            <summary class="font-semibold cursor-pointer">Do you build software or just advise?</summary>
+            <p class="mt-3 text-sm text-[var(--fog)]">Both. Advisory, embedded support, or end-to-end build — whatever is most effective.</p>
+          </details>
+          <details class="p-5 rounded-2xl border border-[var(--runway)]">
+            <summary class="font-semibold cursor-pointer">What industries have you worked in?</summary>
+            <p class="mt-3 text-sm text-[var(--fog)]">Healthcare, aviation, industrial manufacturing, software platforms, and textiles.</p>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT (CTA + simple) -->
+    <section id="contact" class="bg-[var(--ink)] text-white">
+      <div class="max-w-7xl mx-auto px-6 py-20">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 items-center">
+          <div class="lg:col-span-7">
+            <h2 class="text-3xl md:text-4xl font-bold">Want to talk?</h2>
+            <p class="mt-4 text-slate-300 max-w-xl">
+              If you’re unsure what the right move is — that’s a great place to start. Tell me what’s going on and I’ll respond with next steps.
+            </p>
+            <div class="mt-8 flex flex-wrap gap-3 text-xs text-slate-300">
+              <span class="px-3 py-1 rounded-full border border-slate-700">Cloud</span>
+              <span class="px-3 py-1 rounded-full border border-slate-700">Reliability</span>
+              <span class="px-3 py-1 rounded-full border border-slate-700">Observability</span>
+              <span class="px-3 py-1 rounded-full border border-slate-700">Integrations</span>
+              <span class="px-3 py-1 rounded-full border border-slate-700">AI (when it fits)</span>
+            </div>
+          </div>
+
+          <div class="lg:col-span-5 bg-white/5 border border-slate-700 rounded-3xl p-8">
+            <!-- Placeholder form (swap with Odoo form snippet) -->
+            <div class="text-sm text-slate-200 font-semibold">Contact form</div>
+            <p class="mt-2 text-sm text-slate-300">In Odoo, drop your website form here (Name, Email, Company, Message).</p>
+            <a href="#" class="mt-6 tap w-full px-8 py-4 rounded-xl bg-[var(--signal)] text-white font-semibold shadow hover:shadow-lg transition">Open contact form</a>
+            <p class="mt-3 text-xs text-slate-400">No spam. No pressure. Just a conversation.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="max-w-7xl mx-auto px-6 py-10 text-sm text-[var(--fog)]">
+      © 2025 Jacob Sims — Engineering & Technology Consulting · Myrtle Beach, SC
+    </footer>
+  </main>
+</body>
+</html>

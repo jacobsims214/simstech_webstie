@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <!-- =======================================================================
+         Simstech Hero Section
+         Main landing section with brand identity, headline, and CTAs
+    ======================================================================== -->
+
+    <template id="s_simstech_hero" name="Simstech Hero">
+        <section class="s_simstech_hero simstech-hero-bg simstech-fade-in">
+            <div class="simstech-container hero-content">
+                <!-- Brand Logo -->
+                <div class="hero-brand">
+                    <img src="/simstech_website/static/src/img/jacob-sims-logo.png" 
+                         alt="Jacob Sims – Engineering Systems Reliability" 
+                         class="hero-logo o_editable_media"/>
+                    <p class="hero-tagline o_default_snippet_text">
+                        Myrtle Beach, SC • Engineering • Systems • Reliability
+                    </p>
+                </div>
+
+                <!-- Headline -->
+                <h1 class="hero-headline">
+                    <span class="o_default_snippet_text">Engineer first.</span><br/>
+                    <span class="text-muted o_default_snippet_text">I build systems that last.</span>
+                </h1>
+
+                <!-- Description -->
+                <p class="hero-description o_default_snippet_text">
+                    I work with people and teams facing real‑world complexity — messy operations, 
+                    unclear tech decisions, reliability problems, or growth pressure. My job is to 
+                    understand the business first, then engineer practical systems: cloud platforms, 
+                    observability, integrations, and AI only when it actually makes sense.
+                </p>
+
+                <!-- CTA Buttons -->
+                <div class="hero-cta">
+                    <a href="/contactus" class="btn-simstech-primary btn-simstech-lg">
+                        Start a conversation
+                    </a>
+                    <a href="#work" class="btn-simstech-secondary btn-simstech-lg">
+                        See my work
+                    </a>
+                </div>
+
+                <!-- Social Proof -->
+                <div class="hero-proof">
+                    <span class="o_default_snippet_text">10+ years engineering</span>
+                    <span class="separator">•</span>
+                    <span class="o_default_snippet_text">Healthcare, aviation, manufacturing</span>
+                    <span class="separator">•</span>
+                    <span class="o_default_snippet_text">Builder, not buzzwords</span>
+                </div>
+            </div>
+        </section>
+    </template>
+
+    <!-- Snippet Options for Website Editor -->
+    <template id="s_simstech_hero_options" inherit_id="website.snippet_options">
+        <xpath expr="." position="inside">
+            <div data-selector=".s_simstech_hero" data-js="SimstechHero">
+                <we-select string="Background Style">
+                    <we-button data-select-class="">Default Gradient</we-button>
+                    <we-button data-select-class="simstech-hero-bg-alt">Alternate</we-button>
+                    <we-button data-select-class="simstech-hero-bg-minimal">Minimal</we-button>
+                </we-select>
+            </div>
+        </xpath>
+    </template>
+
+</odoo>
+

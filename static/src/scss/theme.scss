@@ -1,0 +1,365 @@
+// =============================================================================
+// Simstech Theme - Core Styles
+// =============================================================================
+
+@import 'variables';
+
+// -----------------------------------------------------------------------------
+// Base HTML & Body
+// -----------------------------------------------------------------------------
+
+body {
+  background-color: $simstech-cloud;
+  color: $simstech-ink;
+  font-family: $font-family-base;
+  line-height: $line-height-base;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+// -----------------------------------------------------------------------------
+// Typography
+// -----------------------------------------------------------------------------
+
+h1, h2, h3, h4, h5, h6,
+.h1, .h2, .h3, .h4, .h5, .h6 {
+  font-family: $font-family-display;
+  font-weight: $font-weight-bold;
+  line-height: $line-height-tight;
+  letter-spacing: $letter-spacing-tight;
+  color: $simstech-ink;
+}
+
+h1, .h1 {
+  font-size: clamp(2.5rem, 5vw + 1rem, $h1-font-size);
+}
+
+h2, .h2 {
+  font-size: clamp(1.5rem, 3vw + 0.5rem, $h2-font-size);
+}
+
+.text-fog {
+  color: $simstech-fog;
+}
+
+.text-signal {
+  color: $simstech-signal;
+}
+
+.text-accent {
+  color: $simstech-accent;
+}
+
+// -----------------------------------------------------------------------------
+// Links
+// -----------------------------------------------------------------------------
+
+a {
+  color: $simstech-signal;
+  text-decoration: none;
+  transition: color $transition-base;
+  
+  &:hover {
+    color: darken($simstech-signal, 10%);
+  }
+}
+
+// -----------------------------------------------------------------------------
+// Buttons
+// -----------------------------------------------------------------------------
+
+.btn-simstech-primary {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 44px; // Touch-friendly
+  padding: 0.75rem 2.25rem;
+  background-color: $simstech-signal;
+  color: white;
+  font-weight: $font-weight-semibold;
+  border-radius: $border-radius-lg;
+  box-shadow: $shadow;
+  transition: transform $transition-base, box-shadow $transition-base, background-color $transition-base;
+  border: none;
+  cursor: pointer;
+  
+  &:hover {
+    transform: translateY(-1px);
+    box-shadow: $shadow-md;
+    background-color: darken($simstech-signal, 5%);
+    color: white;
+  }
+  
+  &:active {
+    transform: translateY(0);
+  }
+}
+
+.btn-simstech-secondary {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 44px;
+  padding: 0.75rem 2.25rem;
+  background-color: white;
+  color: $simstech-ink;
+  font-weight: $font-weight-semibold;
+  border: 1px solid $simstech-runway;
+  border-radius: $border-radius-lg;
+  transition: transform $transition-base, box-shadow $transition-base;
+  cursor: pointer;
+  
+  &:hover {
+    transform: translateY(-1px);
+    box-shadow: $shadow;
+    color: $simstech-ink;
+  }
+}
+
+// Large button variant
+.btn-simstech-lg {
+  padding: 1rem 2.25rem;
+  border-radius: $border-radius-xl;
+  font-size: $font-size-lg;
+}
+
+// -----------------------------------------------------------------------------
+// Cards
+// -----------------------------------------------------------------------------
+
+.card-simstech {
+  background-color: white;
+  border: 1px solid $simstech-runway;
+  border-radius: $border-radius-xl;
+  padding: 1.5rem;
+  transition: transform $transition-base, box-shadow $transition-base;
+  
+  &:hover {
+    transform: translateY(-2px);
+    box-shadow: $shadow-md;
+  }
+}
+
+.card-simstech-ghost {
+  background: transparent;
+  border: none;
+  padding: 1.5rem;
+}
+
+// -----------------------------------------------------------------------------
+// Hero Section Background
+// -----------------------------------------------------------------------------
+
+.simstech-hero-bg {
+  background:
+    radial-gradient(1200px 600px at 80% -20%, rgba($simstech-accent, 0.18), transparent 40%),
+    radial-gradient(800px 400px at 0% 0%, rgba($simstech-signal, 0.18), transparent 45%),
+    linear-gradient(180deg, $simstech-cloud 0%, #F1F5F9 100%);
+}
+
+// -----------------------------------------------------------------------------
+// Section Divider
+// -----------------------------------------------------------------------------
+
+.simstech-divider {
+  height: 1px;
+  background: linear-gradient(90deg, transparent, rgba(0, 0, 0, 0.12), transparent);
+  margin: 4rem 0;
+  border: none;
+}
+
+// -----------------------------------------------------------------------------
+// Container
+// -----------------------------------------------------------------------------
+
+.simstech-container {
+  max-width: $container-max-width;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: $container-padding-x;
+  padding-right: $container-padding-x;
+}
+
+// -----------------------------------------------------------------------------
+// Navbar Overrides
+// -----------------------------------------------------------------------------
+
+#wrapwrap header {
+  position: sticky;
+  top: 0;
+  z-index: $z-navbar;
+  background-color: rgba($simstech-cloud, 0.9);
+  backdrop-filter: blur(8px);
+  border-bottom: 1px solid $simstech-runway;
+  
+  .navbar {
+    max-width: $container-max-width;
+    margin: 0 auto;
+    padding: 1rem $container-padding-x;
+  }
+  
+  .navbar-brand img {
+    height: 2rem;
+    width: auto;
+  }
+  
+  .nav-link {
+    color: $simstech-fog;
+    font-size: $font-size-sm;
+    transition: color $transition-base;
+    
+    &:hover {
+      color: $simstech-signal;
+    }
+  }
+}
+
+// -----------------------------------------------------------------------------
+// Footer Overrides
+// -----------------------------------------------------------------------------
+
+#wrapwrap footer {
+  max-width: $container-max-width;
+  margin: 0 auto;
+  padding: 2.5rem $container-padding-x;
+  font-size: $font-size-sm;
+  color: $simstech-fog;
+}
+
+// -----------------------------------------------------------------------------
+// Section Spacing
+// -----------------------------------------------------------------------------
+
+.section-padding {
+  padding-top: $section-padding-y;
+  padding-bottom: $section-padding-y;
+  
+  @media (max-width: $breakpoint-md) {
+    padding-top: $section-padding-y-mobile;
+    padding-bottom: $section-padding-y-mobile;
+  }
+}
+
+// -----------------------------------------------------------------------------
+// Animations
+// -----------------------------------------------------------------------------
+
+.simstech-fade-in {
+  opacity: 0;
+  transform: translateY(8px);
+  animation: simstech-fade-up 600ms ease forwards;
+}
+
+@keyframes simstech-fade-up {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.simstech-hover-rise {
+  transition: transform $transition-base, opacity $transition-base;
+  
+  &:hover {
+    transform: translateY(-2px);
+  }
+}
+
+// -----------------------------------------------------------------------------
+// Dark Section (Contact)
+// -----------------------------------------------------------------------------
+
+.simstech-section-dark {
+  background-color: $simstech-ink;
+  color: white;
+  
+  h1, h2, h3, h4, h5, h6 {
+    color: white;
+  }
+  
+  .text-muted {
+    color: rgba(white, 0.7) !important;
+  }
+}
+
+// -----------------------------------------------------------------------------
+// FAQ Accordion
+// -----------------------------------------------------------------------------
+
+.simstech-faq {
+  details {
+    padding: 1.25rem;
+    border-radius: $border-radius-lg;
+    border: 1px solid $simstech-runway;
+    
+    summary {
+      font-weight: $font-weight-semibold;
+      cursor: pointer;
+      list-style: none;
+      
+      &::-webkit-details-marker {
+        display: none;
+      }
+      
+      &::before {
+        content: '+';
+        margin-right: 0.5rem;
+        font-weight: $font-weight-normal;
+      }
+    }
+    
+    &[open] summary::before {
+      content: '−';
+    }
+    
+    p {
+      margin-top: 0.75rem;
+      font-size: $font-size-sm;
+      color: $simstech-fog;
+    }
+  }
+}
+
+// -----------------------------------------------------------------------------
+// Pills/Tags
+// -----------------------------------------------------------------------------
+
+.simstech-pill {
+  display: inline-flex;
+  padding: 0.25rem 0.75rem;
+  border-radius: 9999px;
+  font-size: $font-size-xs;
+  border: 1px solid $simstech-runway;
+  
+  &.simstech-pill-dark {
+    border-color: rgba(white, 0.2);
+    color: rgba(white, 0.8);
+  }
+}
+
+// -----------------------------------------------------------------------------
+// List Styles
+// -----------------------------------------------------------------------------
+
+.simstech-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  
+  li {
+    display: flex;
+    gap: 1.5rem;
+    
+    &::before {
+      content: '•';
+      color: $simstech-accent;
+      font-size: 1.25rem;
+      flex-shrink: 0;
+    }
+  }
+  
+  &.simstech-list-arrow li::before {
+    content: '→';
+  }
+}
+

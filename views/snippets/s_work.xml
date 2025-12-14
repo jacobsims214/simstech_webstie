@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <!-- =======================================================================
+         Simstech Work/Experience Section
+         Industries and experience areas
+    ======================================================================== -->
+
+    <template id="s_simstech_work" name="Simstech Work Experience">
+        <section id="work" class="s_simstech_work section-padding">
+            <div class="simstech-container">
+                <h2 class="o_default_snippet_text">Where I've done this before</h2>
+                <p class="text-fog mt-2 o_default_snippet_text" style="max-width: 42rem;">
+                    I've worked across regulated, operationally complex environments where systems have to last.
+                </p>
+                
+                <div class="work-grid mt-5">
+                    <div class="work-card simstech-hover-rise">
+                        <div class="work-title o_default_snippet_text">Healthcare</div>
+                        <div class="work-desc o_default_snippet_text">
+                            Compliance, data integrity, reliability.
+                        </div>
+                    </div>
+                    
+                    <div class="work-card simstech-hover-rise">
+                        <div class="work-title o_default_snippet_text">Aviation</div>
+                        <div class="work-desc o_default_snippet_text">
+                            Safety-critical systems and operations.
+                        </div>
+                    </div>
+                    
+                    <div class="work-card simstech-hover-rise">
+                        <div class="work-title o_default_snippet_text">Manufacturing</div>
+                        <div class="work-desc o_default_snippet_text">
+                            Ops, reporting, and automation.
+                        </div>
+                    </div>
+                    
+                    <div class="work-card simstech-hover-rise">
+                        <div class="work-title o_default_snippet_text">Software platforms</div>
+                        <div class="work-desc o_default_snippet_text">
+                            Scaling teams and systems.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </template>
+
+</odoo>
+
