@@ -5,7 +5,7 @@
  * Custom options for the website editor
  */
 
-import options from '@web_editor/js/editor/snippets/options';
+import options from "@web_editor/js/editor/snippets/options";
 
 // Hero section options
 options.registry.SimstechHero = options.Class.extend({
@@ -20,4 +20,3 @@ options.registry.SimstechHero = options.Class.extend({
 export default {
     SimstechHero: options.registry.SimstechHero,
 };
-

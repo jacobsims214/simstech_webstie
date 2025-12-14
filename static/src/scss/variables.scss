@@ -5,153 +5,113 @@
 // Clean, professional, calm with kinetic orange accents
 // =============================================================================
 
+// NOTE: This file is loaded by Odoo's asset bundler.
+// Do NOT use @import here - Odoo handles bundling automatically.
+
 // -----------------------------------------------------------------------------
 // Brand Colors
 // -----------------------------------------------------------------------------
 
 // Core palette
-$simstech-ink: #0B0F14;           // Deep ink - primary text
-$simstech-charcoal: #111827;       // Dark charcoal - dark sections
-$simstech-steel: #1F2937;          // Steel gray - cards/borders
-$simstech-cloud: #F8FAFC;          // Light cloud - backgrounds
-$simstech-fog: #6B7280;            // Fog gray - secondary text
-$simstech-runway: #E5E7EB;         // Runway gray - borders/dividers
+$simstech-ink: #0B0F14 !default;           // Deep ink - primary text
+$simstech-charcoal: #111827 !default;       // Dark charcoal - dark sections
+$simstech-steel: #1F2937 !default;          // Steel gray - cards/borders
+$simstech-cloud: #F8FAFC !default;          // Light cloud - backgrounds
+$simstech-fog: #6B7280 !default;            // Fog gray - secondary text
+$simstech-runway: #E5E7EB !default;         // Runway gray - borders/dividers
 
 // Accent colors
-$simstech-signal: #2563EB;         // Signal blue - CTAs, links, primary action
-$simstech-accent: #F97316;         // Kinetic orange - highlights, energy
+$simstech-signal: #2563EB !default;         // Signal blue - CTAs, links, primary action
+$simstech-accent: #F97316 !default;         // Kinetic orange - highlights, energy
 
 // Functional colors
-$simstech-success: #10B981;
-$simstech-warning: #F59E0B;
-$simstech-error: #EF4444;
-
-// -----------------------------------------------------------------------------
-// Odoo Theme Color Mappings
-// -----------------------------------------------------------------------------
-
-// Map to Odoo's color system
-$o-color-1: $simstech-signal;      // Primary
-$o-color-2: $simstech-charcoal;    // Secondary
-$o-color-3: $simstech-cloud;       // Light
-$o-color-4: $simstech-fog;         // Muted
-$o-color-5: $simstech-accent;      // Accent
-
-// Override Odoo theme variables
-$o-theme-navbar-color: $simstech-cloud;
-$o-theme-navbar-bg: rgba($simstech-cloud, 0.9);
+$simstech-success: #10B981 !default;
+$simstech-warning: #F59E0B !default;
+$simstech-error: #EF4444 !default;
 
 // -----------------------------------------------------------------------------
 // Typography
 // -----------------------------------------------------------------------------
 
-// Font stacks - clean, professional
-$font-family-base: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', sans-serif;
-$font-family-display: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-$font-family-mono: 'JetBrains Mono', 'Fira Code', 'Consolas', monospace;
-
 // Font sizes (using Odoo's responsive scaling)
-$font-size-base: 1rem;
-$font-size-sm: 0.875rem;
-$font-size-xs: 0.75rem;
-$font-size-lg: 1.125rem;
-$font-size-xl: 1.25rem;
+$simstech-font-size-base: 1rem !default;
+$simstech-font-size-sm: 0.875rem !default;
+$simstech-font-size-xs: 0.75rem !default;
+$simstech-font-size-lg: 1.125rem !default;
+$simstech-font-size-xl: 1.25rem !default;
 
 // Headings
-$h1-font-size: 3.5rem;   // 56px - hero headlines
-$h2-font-size: 2rem;     // 32px - section titles
-$h3-font-size: 1.5rem;   // 24px - subsections
-$h4-font-size: 1.25rem;  // 20px - card titles
-$h5-font-size: 1.125rem; // 18px
-$h6-font-size: 1rem;     // 16px
+$simstech-h1-font-size: 3.5rem !default;   // 56px - hero headlines
+$simstech-h2-font-size: 2rem !default;     // 32px - section titles
+$simstech-h3-font-size: 1.5rem !default;   // 24px - subsections
+$simstech-h4-font-size: 1.25rem !default;  // 20px - card titles
 
 // Font weights
-$font-weight-normal: 400;
-$font-weight-medium: 500;
-$font-weight-semibold: 600;
-$font-weight-bold: 700;
+$simstech-font-weight-normal: 400 !default;
+$simstech-font-weight-medium: 500 !default;
+$simstech-font-weight-semibold: 600 !default;
+$simstech-font-weight-bold: 700 !default;
 
 // Line heights
-$line-height-base: 1.6;
-$line-height-tight: 1.25;
-$line-height-relaxed: 1.75;
+$simstech-line-height-base: 1.6 !default;
+$simstech-line-height-tight: 1.25 !default;
+$simstech-line-height-relaxed: 1.75 !default;
 
 // Letter spacing
-$letter-spacing-tight: -0.025em;
-$letter-spacing-normal: 0;
-$letter-spacing-wide: 0.025em;
+$simstech-letter-spacing-tight: -0.025em !default;
 
 // -----------------------------------------------------------------------------
 // Spacing
 // -----------------------------------------------------------------------------
 
-$spacer: 1rem;
-$spacers: (
-  0: 0,
-  1: $spacer * 0.25,   // 4px
-  2: $spacer * 0.5,    // 8px
-  3: $spacer,          // 16px
-  4: $spacer * 1.5,    // 24px
-  5: $spacer * 2,      // 32px
-  6: $spacer * 3,      // 48px
-  7: $spacer * 4,      // 64px
-  8: $spacer * 5,      // 80px
-  9: $spacer * 6,      // 96px
-  10: $spacer * 7,     // 112px
-);
+$simstech-spacer: 1rem !default;
 
 // Section padding
-$section-padding-y: 7rem;
-$section-padding-y-mobile: 4rem;
+$simstech-section-padding-y: 7rem !default;
+$simstech-section-padding-y-mobile: 4rem !default;
 
 // -----------------------------------------------------------------------------
 // Layout
 // -----------------------------------------------------------------------------
 
-$container-max-width: 80rem; // 1280px - max-w-7xl equivalent
-$container-padding-x: 1.5rem;
+$simstech-container-max-width: 80rem !default; // 1280px - max-w-7xl equivalent
+$simstech-container-padding-x: 1.5rem !default;
 
 // Border radius
-$border-radius-sm: 0.5rem;   // 8px
-$border-radius: 0.75rem;     // 12px
-$border-radius-lg: 1rem;     // 16px
-$border-radius-xl: 1.5rem;   // 24px
-$border-radius-2xl: 2rem;    // 32px
+$simstech-border-radius-sm: 0.5rem !default;   // 8px
+$simstech-border-radius: 0.75rem !default;     // 12px
+$simstech-border-radius-lg: 1rem !default;     // 16px
+$simstech-border-radius-xl: 1.5rem !default;   // 24px
+$simstech-border-radius-2xl: 2rem !default;    // 32px
 
 // -----------------------------------------------------------------------------
 // Shadows
 // -----------------------------------------------------------------------------
 
-$shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
-$shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px -1px rgba(0, 0, 0, 0.1);
-$shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -2px rgba(0, 0, 0, 0.1);
-$shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -4px rgba(0, 0, 0, 0.1);
-$shadow-xl: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 8px 10px -6px rgba(0, 0, 0, 0.1);
+$simstech-shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.05) !default;
+$simstech-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px -1px rgba(0, 0, 0, 0.1) !default;
+$simstech-shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -2px rgba(0, 0, 0, 0.1) !default;
+$simstech-shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -4px rgba(0, 0, 0, 0.1) !default;
 
 // -----------------------------------------------------------------------------
 // Transitions
 // -----------------------------------------------------------------------------
 
-$transition-fast: 150ms ease;
-$transition-base: 180ms ease;
-$transition-slow: 300ms ease;
-$transition-slower: 500ms ease;
+$simstech-transition-fast: 150ms ease !default;
+$simstech-transition-base: 180ms ease !default;
+$simstech-transition-slow: 300ms ease !default;
 
 // -----------------------------------------------------------------------------
 // Z-index
 // -----------------------------------------------------------------------------
 
-$z-navbar: 40;
-$z-modal: 50;
-$z-tooltip: 60;
+$simstech-z-navbar: 40 !default;
 
 // -----------------------------------------------------------------------------
-// Breakpoints (matching Tailwind/Bootstrap for consistency)
+// Breakpoints
 // -----------------------------------------------------------------------------
 
-$breakpoint-sm: 640px;
-$breakpoint-md: 768px;
-$breakpoint-lg: 1024px;
-$breakpoint-xl: 1280px;
-$breakpoint-2xl: 1536px;
-
+$simstech-breakpoint-sm: 640px !default;
+$simstech-breakpoint-md: 768px !default;
+$simstech-breakpoint-lg: 1024px !default;
+$simstech-breakpoint-xl: 1280px !default;

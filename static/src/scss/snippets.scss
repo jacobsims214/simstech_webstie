@@ -2,7 +2,8 @@
 // Simstech Snippet Styles
 // =============================================================================
 
-@import 'variables';
+// NOTE: Variables are loaded by Odoo's bundler before this file.
+// Do NOT use @import here.
 
 // -----------------------------------------------------------------------------
 // Hero Snippet
@@ -21,19 +22,19 @@
   
   .hero-tagline {
     margin-top: 0.75rem;
-    font-size: $font-size-sm;
+    font-size: $simstech-font-size-sm;
     color: $simstech-fog;
   }
   
   .hero-headline {
     margin-top: 1rem;
     font-size: clamp(2.5rem, 6vw, 4.5rem);
-    font-weight: $font-weight-bold;
+    font-weight: $simstech-font-weight-bold;
     line-height: 1.1;
-    letter-spacing: $letter-spacing-tight;
+    letter-spacing: $simstech-letter-spacing-tight;
     
     .text-muted {
-      color: $simstech-fog;
+      color: $simstech-fog !important;
     }
   }
   
@@ -42,7 +43,7 @@
     font-size: 1.25rem;
     color: $simstech-fog;
     max-width: 42rem;
-    line-height: $line-height-relaxed;
+    line-height: $simstech-line-height-relaxed;
   }
   
   .hero-cta {
@@ -57,7 +58,7 @@
     display: flex;
     flex-wrap: wrap;
     gap: 1.5rem;
-    font-size: $font-size-sm;
+    font-size: $simstech-font-size-sm;
     color: $simstech-fog;
     
     .separator {
@@ -77,15 +78,15 @@
     gap: 4rem;
     align-items: start;
     
-    @media (min-width: $breakpoint-lg) {
+    @media (min-width: $simstech-breakpoint-lg) {
       grid-template-columns: 1fr 2fr;
     }
   }
   
   .services-header {
     h2 {
-      font-size: $h2-font-size;
-      font-weight: $font-weight-semibold;
+      font-size: $simstech-h2-font-size;
+      font-weight: $simstech-font-weight-semibold;
     }
     
     p {
@@ -104,7 +105,7 @@
       display: flex;
       gap: 1.5rem;
       padding: 0.5rem 0;
-      transition: transform $transition-base;
+      transition: transform $simstech-transition-base;
       
       &:hover {
         transform: translateY(-2px);
@@ -117,12 +118,12 @@
       }
       
       .service-title {
-        font-weight: $font-weight-semibold;
+        font-weight: $simstech-font-weight-semibold;
       }
       
       .service-desc {
         margin-top: 0.25rem;
-        font-size: $font-size-sm;
+        font-size: $simstech-font-size-sm;
         color: $simstech-fog;
       }
     }
@@ -147,12 +148,12 @@
       }
       
       .problem-title {
-        font-weight: $font-weight-semibold;
+        font-weight: $simstech-font-weight-semibold;
       }
       
       .problem-solution {
         margin-top: 0.25rem;
-        font-size: $font-size-sm;
+        font-size: $simstech-font-size-sm;
         color: $simstech-fog;
       }
     }
@@ -173,26 +174,26 @@
     grid-template-columns: repeat(1, 1fr);
     gap: 1.5rem;
     
-    @media (min-width: $breakpoint-md) {
+    @media (min-width: $simstech-breakpoint-md) {
       grid-template-columns: repeat(4, 1fr);
     }
   }
   
   .work-card {
     padding: 1.5rem;
-    transition: transform $transition-base;
+    transition: transform $simstech-transition-base;
     
     &:hover {
       transform: translateY(-2px);
     }
     
     .work-title {
-      font-weight: $font-weight-semibold;
+      font-weight: $simstech-font-weight-semibold;
     }
     
     .work-desc {
       margin-top: 0.5rem;
-      font-size: $font-size-sm;
+      font-size: $simstech-font-size-sm;
       color: $simstech-fog;
     }
   }
@@ -208,24 +209,24 @@
     grid-template-columns: repeat(1, 1fr);
     gap: 1.5rem;
     
-    @media (min-width: $breakpoint-md) {
+    @media (min-width: $simstech-breakpoint-md) {
       grid-template-columns: repeat(3, 1fr);
     }
   }
   
   .approach-card {
     padding: 1.5rem;
-    border-radius: $border-radius-xl;
+    border-radius: $simstech-border-radius-xl;
     border: 1px solid $simstech-runway;
     background: white;
     
     .card-title {
-      font-weight: $font-weight-semibold;
+      font-weight: $simstech-font-weight-semibold;
     }
     
     .card-desc {
       margin-top: 0.5rem;
-      font-size: $font-size-sm;
+      font-size: $simstech-font-size-sm;
       color: $simstech-fog;
     }
   }
@@ -234,12 +235,12 @@
     margin-top: 2.5rem;
     background: white;
     border: 1px solid $simstech-runway;
-    border-radius: $border-radius-2xl;
+    border-radius: $simstech-border-radius-2xl;
     padding: 2rem;
     
     h3 {
       font-size: 1.125rem;
-      font-weight: $font-weight-semibold;
+      font-weight: $simstech-font-weight-semibold;
     }
     
     .steps-grid {
@@ -248,23 +249,23 @@
       grid-template-columns: repeat(1, 1fr);
       gap: 1.5rem;
       
-      @media (min-width: $breakpoint-md) {
+      @media (min-width: $simstech-breakpoint-md) {
         grid-template-columns: repeat(3, 1fr);
       }
     }
     
     .step {
       padding: 1.25rem;
-      border-radius: $border-radius-lg;
+      border-radius: $simstech-border-radius-lg;
       border: 1px solid $simstech-runway;
       
       .step-title {
-        font-weight: $font-weight-semibold;
+        font-weight: $simstech-font-weight-semibold;
       }
       
       .step-desc {
         margin-top: 0.5rem;
-        font-size: $font-size-sm;
+        font-size: $simstech-font-size-sm;
         color: $simstech-fog;
       }
     }
@@ -279,12 +280,12 @@
   .faq-container {
     background: white;
     border: 1px solid $simstech-runway;
-    border-radius: $border-radius-2xl;
+    border-radius: $simstech-border-radius-2xl;
     padding: 2rem;
     
     h2 {
-      font-size: $h2-font-size;
-      font-weight: $font-weight-semibold;
+      font-size: $simstech-h2-font-size;
+      font-weight: $simstech-font-weight-semibold;
     }
     
     .faq-grid {
@@ -293,7 +294,7 @@
       grid-template-columns: repeat(1, 1fr);
       gap: 1rem;
       
-      @media (min-width: $breakpoint-md) {
+      @media (min-width: $simstech-breakpoint-md) {
         grid-template-columns: repeat(2, 1fr);
       }
     }
@@ -314,7 +315,7 @@
     gap: 2.5rem;
     align-items: center;
     
-    @media (min-width: $breakpoint-lg) {
+    @media (min-width: $simstech-breakpoint-lg) {
       grid-template-columns: 7fr 5fr;
     }
   }
@@ -322,7 +323,7 @@
   .contact-content {
     h2 {
       font-size: clamp(1.875rem, 4vw, 2.5rem);
-      font-weight: $font-weight-bold;
+      font-weight: $simstech-font-weight-bold;
       color: white;
     }
     
@@ -343,26 +344,25 @@
   .contact-form-wrapper {
     background: rgba(white, 0.05);
     border: 1px solid rgba(white, 0.15);
-    border-radius: $border-radius-2xl;
+    border-radius: $simstech-border-radius-2xl;
     padding: 2rem;
     
     .form-title {
-      font-size: $font-size-sm;
+      font-size: $simstech-font-size-sm;
       color: rgba(white, 0.9);
-      font-weight: $font-weight-semibold;
+      font-weight: $simstech-font-weight-semibold;
     }
     
     .form-placeholder {
       margin-top: 0.5rem;
-      font-size: $font-size-sm;
+      font-size: $simstech-font-size-sm;
       color: rgba(white, 0.7);
     }
     
     .form-note {
       margin-top: 0.75rem;
-      font-size: $font-size-xs;
+      font-size: $simstech-font-size-xs;
       color: rgba(white, 0.5);
     }
   }
 }
-
